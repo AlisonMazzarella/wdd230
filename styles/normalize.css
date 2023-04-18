@@ -13,6 +13,9 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+h1, h2, h3 { font-family: 'Poppins', sans-serif;
+    font-family: 'Space Mono', monospace;}
+
 /* Sections
    ========================================================================== */
 
