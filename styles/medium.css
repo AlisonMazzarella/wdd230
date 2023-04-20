@@ -1,0 +1,7 @@
+@media only screen and (min-width: 32.5em) {
+    body {
+        font-size: 16px;
+        background-color: lightblue;
+        padding: 0 20px; 
+      }
+ }
