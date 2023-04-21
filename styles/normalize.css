@@ -49,6 +49,23 @@ main {
   display: block;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(80, 165, 194);
+  border: 10px solid rgba(177, 192, 207, 0.3);
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
