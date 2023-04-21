@@ -9,7 +9,7 @@ h1, h2, h3 { font-family: 'Poppins', sans-serif;
     font-family: 'Space Mono', monospace;
 }
 
-.header {
+header {
   display: flex;
   align-items: center;
   background-color: rgb(80, 165, 194);
@@ -35,8 +35,9 @@ h1, h2, h3 { font-family: 'Poppins', sans-serif;
   margin-left: 30px;
 }
 
-.header h1,
-.header h2 {
+header h1,
+header h2, 
+header h3 {
   color: white;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
@@ -49,7 +50,7 @@ main {
   display: block;
 }
 
-.footer {
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
