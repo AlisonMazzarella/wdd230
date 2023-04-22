@@ -17,7 +17,18 @@ html {
     padding: 20px;
     text-align: center;
   }
-  
+
+  .container {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  .column {
+    border: 1px solid gray;
+    padding: 10px;
+  }
+
   .image-container {
     margin-right: 20px; 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
