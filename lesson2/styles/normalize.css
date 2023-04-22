@@ -19,16 +19,16 @@ html {
   }
 
   .container {
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
     grid-gap: 20px;
-    flex: 1;
     margin-top: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   .column {
     border: 1px solid gray;
     padding: 10px;
+    text-align: center;
   }
 
   .column p {
@@ -36,6 +36,11 @@ html {
     padding: 10px;
     font-size: 1.2em;
     font-weight: bold;
+  }
+
+  .column img {
+    max-width: 100%;
+    height: auto;
   }
 
   .image-container {
