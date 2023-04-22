@@ -5,7 +5,7 @@ html {
     -webkit-text-size-adjust: 100%;
   }
   
-  h1, h2 { font-family: 'Poppins', sans-serif;
+  h1, h2, h3 { font-family: 'Poppins', sans-serif;
       font-family: 'Space Mono', monospace;
   }
   
@@ -22,11 +22,20 @@ html {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+    flex: 1;
+    margin-top: auto;
   }
 
   .column {
     border: 1px solid gray;
     padding: 10px;
+  }
+
+  .column p {
+    border: 4px rgb(83, 82, 82);
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
   }
 
   .image-container {
@@ -54,6 +63,9 @@ html {
   
   body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   
   main {
@@ -70,8 +82,6 @@ html {
     font-size: 14px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    position: absolute;
-    bottom: 0;
     width: 100%;
   }
   
