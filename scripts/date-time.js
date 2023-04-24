@@ -8,7 +8,7 @@ const lastModified = new Date(document.lastModified);
 const formattedDate = lastModified.toLocaleDateString('en-US');
 const formattedTime = lastModified.toLocaleTimeString('en-US');
 
-//create paragraph to display date and time
+//create paragraph to display date and time and current year 
 const dateElement = document.createElement('p');
 dateElement.textContent = `Last updated: ${formattedDate} ${formattedTime}`;
 
