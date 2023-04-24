@@ -75,10 +75,10 @@ footer {
   width: 100%;
 }
 
-footer p {
-  margin-left: 20px;
-  letter-spacing: 2px;
-  line-height: 30px;
+footer::before {
+  content: "\00A9";
+  font-size: 28px;
+  margin-right: 5px;
 }
 
 h1 {

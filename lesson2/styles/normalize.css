@@ -81,24 +81,24 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: rgb(8, 8, 64);
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    position: auto;
     bottom: 0;
     width: 100%;
-  }
-  
-
-  footer p {
-    letter-spacing: 2px;
-    line-height: 30px;
     text-align: center;
   }
+
+  footer::before {
+    content: "\00A9";
+    font-size: 28px;
+    margin-right: 5px;
+}
+  
   
   h1 {
     font-size: 2em;
