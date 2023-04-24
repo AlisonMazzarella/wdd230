@@ -77,6 +77,8 @@ footer {
 
 footer p {
   margin-left: 20px;
+  letter-spacing: 2px;
+  line-height: 30px;
 }
 
 h1 {
