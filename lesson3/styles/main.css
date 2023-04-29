@@ -27,6 +27,14 @@
     object-fit: cover;
 }
 
+.carousel-control-prev, .carousel-control-next {
+  opacity: 0.5;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  opacity: 1;
+}
+
 .logo {
     position: absolute;
     top: 0;
