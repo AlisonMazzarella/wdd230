@@ -1,0 +1,32 @@
+html {
+    background-color: #FFFBF1;
+}
+.topnav {
+    background-color: #00674b;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #FFAE42;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #F67B50;
+  }
+
+.carousel img {
+    max-width: 100%;
+    max-height: 10%;
+}
+
+
