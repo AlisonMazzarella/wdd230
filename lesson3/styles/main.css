@@ -71,5 +71,17 @@ footer {
   margin-left: auto;
 }
 
+@media only screen and (max-width: 600px) {
+  .topnav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topnav a {
+    padding: 14px 16px;
+    font-size: 17px;
+  }
+}
+
 
 
