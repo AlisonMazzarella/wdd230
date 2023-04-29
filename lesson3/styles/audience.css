@@ -29,8 +29,16 @@
     margin-right: 10px;
 }
 
+h1, h2, p {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 body {
-    background-color: #FDF5E6 !important;
+  margin: 0;
+  background-color: #FDF5E6 !important;
 }
 
 main {
