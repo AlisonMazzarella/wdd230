@@ -43,6 +43,10 @@
     margin-right: 10px;
 }
 
+header, main {
+  padding-top: 20px;
+}
+
 body {
     background-color: #FDF5E6 !important;
 }
