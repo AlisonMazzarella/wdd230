@@ -34,6 +34,7 @@
 .topnav a:hover {
     background-color: #ffae42;
     color: black;
+    opacity: .6;
 }
   
 .topnav a.active {
@@ -111,8 +112,13 @@ p {
 h1 {
     padding-top: 10px;
 }
-  
+
+head {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -122,9 +128,11 @@ body {
   
 main {
     flex-grow: 1;
+    font-family: 'Roboto', sans-serif;
 }
   
 footer {
+    font-family: 'Roboto', sans-serif;
     background-color: #00674b;
     color: white;
     padding: 20px;
@@ -174,8 +182,8 @@ footer {
 .footer-right, .contact-info, .map-link {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 18px;
     line-height: 0.0;
     color: white;
@@ -186,3 +194,14 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
+.map-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.map-link a:hover {
+    color: blue;
+}
+
+
