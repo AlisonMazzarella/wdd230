@@ -1,13 +1,6 @@
-function toggleMenu() {
-  var navLinks = document.getElementById("nav-links");
-  navLinks.classList.toggle("show");
-}
+const hamButton = document.querySelector('#hamButton');
+const navigation = document.querySelector('.navigation');
 
-document.addEventListener('DOMContentLoaded', function() {
-  var hamburger = document.getElementById('hamburger');
-  var navLinks = document.getElementById('nav-links');
-
-  hamburger.addEventListener('click', function() {
-    toggleMenu();
-  });
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('responsive');
 });

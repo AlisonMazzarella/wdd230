@@ -1,16 +1,17 @@
-@media screen and (min-width: 1025px) {
-    .nav-links {
-      display: flex;
-      margin-top: 25px;
-    }
+@media only screen and (min-width: 37.5em) {
+      #hamButton {
+        display: none; 
+      } 
+      
+      .navigation {
+        flex-direction: row;
+      }
+      
+      .navigation li {
+        display: block;
+        flex: 1 1 auto;
+      }
 
-    .nav-links a {
-      margin-right: 40px;
-    }
-
-    .hamburger {
-      display: none;
-    }
+}
     
-  }
   

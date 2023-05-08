@@ -8,14 +8,6 @@
     height: 150px;
 }
 
-.hamburger {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 10px;
-    cursor: pointer;
-}
-  
 .topnav a[href="index.html"],
 .topnav a[href="directory.html"],
 .topnav a[href="join.html"],
@@ -23,7 +15,7 @@
     font-size: 20px;
     margin-right: 80px;
 }
-  
+
 .topnav a {
     color: white;
     text-align: center;
@@ -34,6 +26,44 @@
 .topnav a:hover {
     color: black;
     opacity: .6;
+}
+
+#hamButton {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: fit-content;
+	font-size: 1.5rem;
+	padding: .5rem;
+}
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+.navigation li {
+	display: none;
+}
+.navigation li a {
+	padding: 1.15rem;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation li a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.navigation.responsive li {
+	display: block;
+	width: 100%;
+}
+.navigation.responsive li a {
+	display: block;
 }
 
 .logo {
@@ -60,20 +90,6 @@
     margin-left: 5px;
 }
   
-.nav-links {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-}
-  
-.nav-links a {
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    margin-top: 25px;
-}
-  
 .nav-date {
     display: flex;
     justify-content: center;
@@ -94,6 +110,7 @@
     display: flex;
     align-items: flex-start;
     margin-top: 20px;
+    transition: margin-left 0.3s ease;
 }
   
 h1,

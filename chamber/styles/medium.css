@@ -1,24 +1,41 @@
-@media screen and (max-width: 1024px) {
-    .hamburger {
-      display: block;
-      margin-right: 20px;
-      cursor: pointer;
-    }
+@media only screen and (min-width: 64em) {
+  #hamButton {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding: .5rem;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  .navigation li {
+    display: none;
+  }
+  .navigation li a {
+    padding: 1.15rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  .navigation li a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+  }
   
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 20px;
-    }
-  
-    .nav-links a {
-      margin: 10px 0;
-    }
-  
-    .nav-links.show {
-      display: flex;
-    }
+  .navigation.responsive li {
+    display: block;
+    width: 100%;
+  }
+  .navigation.responsive li a {
+    display: block;
+  }
 
   .left-column,
   .center-column,
@@ -54,5 +71,17 @@
   .spotlight-block .section:nth-child(n+3) {
     display: none;
   }
+
+  .nav-icons {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    transition: margin-left 0.3s ease;
+  }
+
+  .nav-icons a:last-child {
+    margin-left: 10px;
+  }
+
 }
   
