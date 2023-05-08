@@ -1,18 +1,16 @@
-.hamburger {
-    display: none;
-  }
-  
-  .nav-links {
-    display: flex;
-  }
-  
-  .nav-links a {
-    margin-right: 40px;
-  }
-  
-  @media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
     .nav-links {
+      display: flex;
       margin-top: 25px;
     }
+
+    .nav-links a {
+      margin-right: 40px;
+    }
+
+    .hamburger {
+      display: none;
+    }
+    
   }
   

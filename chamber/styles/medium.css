@@ -1,19 +1,8 @@
-.hamburger {
-    display: none;
-  }
-  
-  .nav-links {
-    display: flex;
-  }
-  
-  .nav-links a {
-    margin-right: 20px;
-  }
-  
-  @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .hamburger {
       display: block;
       margin-right: 20px;
+      cursor: pointer;
     }
   
     .nav-links {
@@ -31,7 +20,7 @@
       display: flex;
     }
 
-    .left-column,
+  .left-column,
   .center-column,
   .right-column {
     align-items: flex-start;
