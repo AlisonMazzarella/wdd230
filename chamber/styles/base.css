@@ -32,15 +32,10 @@
 }
   
 .topnav a:hover {
-    background-color: #ffae42;
     color: black;
     opacity: .6;
 }
-  
-.topnav a.active {
-    background-color: #f67b50;
-}
-  
+
 .logo {
     display: flex;
     align-items: center;
@@ -86,12 +81,13 @@
     background-color: #2a8163;
     color: white;
     padding: 10px 0;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     width: 100%;
     position: absolute;
     bottom: 5px;
     left: 0;
+    word-spacing: 6px;
 }
   
 .nav-icons {
@@ -150,28 +146,39 @@ footer {
 }
 
 .logo-footer {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 1.5rem;
-    line-height: 1.2;
+    flex-shrink : 0;
+    margin-right: 20px;
 }
 
+.logo-footer img {
+    height: auto; 
+    max-height: 165px;
+    max-width: 100%;
+}
+
+.footer-text h4 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 5px; 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.2;
+}
+  
+.footer-text p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.5;
+}    
+  
 .footer-left {
     display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-  
-.footer-left .logo-footer .address {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    color: white;
-    font-size: 1.2rem;
-    line-height: 1.2;
 }
   
 .footer-right {
@@ -180,11 +187,8 @@ footer {
 }
 
 .footer-right, .contact-info, .map-link {
-    display: flex;
-    flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 18px;
     line-height: 0.0;
     color: white;
     padding: 10px;
@@ -194,11 +198,13 @@ footer {
 .contact-info {
     display: flex;
     flex-direction: column;
+    font-size: 18px;
 }
 
 .map-link a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
 }
 
 .map-link a:hover {
