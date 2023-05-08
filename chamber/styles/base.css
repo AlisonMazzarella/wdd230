@@ -293,4 +293,41 @@ footer {
     color: blue;
 }
 
+@media (max-width: 768px) {
+    .left-column,
+    .center-column,
+    .right-column {
+      align-items: flex-start;
+    }
+  
+    .right-column {
+      order: -1;
+    }
+
+    .hero-block,
+    .event-block,
+    .weather-block,
+    .news-block,
+    .spotlight-block {
+      width: 100%;
+    }
+  
+    .hero-block,
+    .event-block,
+    .weather-block,
+    .news-block {
+      order: -1;
+    }
+  
+    .event-block,
+    .weather-block {
+      display: inline-block;
+      width: calc(50% - 10px);
+    }
+
+    .spotlight-block .section:nth-child(3) {
+        display: none;
+      }
+}
+
 

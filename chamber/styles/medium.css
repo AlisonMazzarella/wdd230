@@ -10,7 +10,7 @@
     margin-right: 20px;
   }
   
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1024px) {
     .hamburger {
       display: block;
       margin-right: 20px;
@@ -30,5 +30,40 @@
     .nav-links.show {
       display: flex;
     }
+
+    .left-column,
+  .center-column,
+  .right-column {
+    align-items: flex-start;
   }
+
+  .center-column {
+    order: -1;
+  }
+
+  .hero-block,
+  .news-block,
+  .spotlight-block {
+    width: 100%;
+  }
+
+  .news-block {
+    order: -1;
+  }
+
+  .join-block {
+    display: inline-block;
+    width: 250px;
+  }
+
+  .event-block,
+  .weather-block {
+    display: inline-block;
+    width: calc(50% - 10px);
+  }
+
+  .spotlight-block .section:nth-child(n+3) {
+    display: none;
+  }
+}
   

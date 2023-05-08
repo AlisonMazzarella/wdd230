@@ -10,7 +10,7 @@
     margin-right: 40px;
   }
   
-  @media screen and (min-width: 1201px) {
+  @media screen and (min-width: 1025px) {
     .nav-links {
       margin-top: 25px;
     }
