@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a basic website outline for my chamber of commerce website for the WDD 230 class at BYU-Idaho.">
-    <title>Peachtree City Chamber of Commerce</title>
+    <meta name="description" content="Alison Mazzarella-Woelzl's WDD 230 Assignments">
+    <meta name="keywords" content="Peachtree City Chamber of Commerce, WDD 230 Assignments, Alison Mazzarella-Woelzl">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <script src="scripts/hamburger.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Peachtree City Chamber of Commerce</title>
 </head>
 <body>
   <header>
     <nav>
         <div class="topnav">
-            <div class="logo">
-                <img src="images/peachtree-city-chamber-of-commerce-logo.png" alt="Peachtree City Chamber of Commerce Logo by AndreaCharlesta on Freepik" style="height: 90px; width: auto;">
+            <div class="logo"><img src="images/peachtree-city-chamber-of-commerce-logo.png" alt="Peachtree City Chamber of Commerce Logo by AndreaCharlesta on Freepik" style="height: 90px; width: auto;">
                 <h1 class="logo-text">
                     Peachtree City<br> 
                     <span>Chamber of Commerce</span>
                 </h1>
             </div>
-            <button id="hamButton">&#9776;</button>
+            <div id="hamburger" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             <ul class="navigation">
-              <li><a href="index.html">Discover</a></li>
-              <li><a href="directory.html">Directory</a></li>
-              <li><a href="join.html">Join</a></li>
-              <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-date" id="currentDate"></div>
             <div class="nav-icons">
@@ -40,26 +43,18 @@
                     <img src="images/icons8-linkedin-circled-48.png" alt="LinkedIn Icon by Icons8" style="height: 30px; width: auto;">
                 </a>
             </div>
+            <div class="mobile-nav">
+                <ul class="mobile-navigation">
+                  <li><a href="index.html">Discover</a></li>
+                  <li><a href="directory.html">Directory</a></li>
+                  <li><a href="join.html">Join</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
   </header>
   <main>
-      <div class="left-column">
-        <div class="event-block">Event</div>
-        <div class="weather-block">Weather</div>
-        <div class="join-block">Join</div>
-      </div>
-      <div class="center-column">
-        <div class="hero-block">Hero with site name and call to action</div>
-        <div class="news-block">News Release</div>
-      </div>
-      <div class="right-column">
-        <div class="spotlight-block">
-          <div class="section">Spotlight 1</div>
-          <div class="section">Spotlight 2</div>
-          <div class="section">Spotlight 3</div>
-        </div>
-      </div>
   </main>
   <footer>
       <div class="container">
@@ -90,6 +85,7 @@
       </div>
   </footer>  
     <script src="scripts/date.js"></script>
-    <script src="scripts/modification.js"></script>   
+    <script src="scripts/modification.js"></script>
+    <script src="scripts/hamburger.js"></script>   
 </body>
 </html>
