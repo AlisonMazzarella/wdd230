@@ -82,6 +82,7 @@ footer {
   margin-left: auto;
   color: white;
   text-decoration: none;
+  font-size: bold;
 }
 
 .map-link a:hover {
