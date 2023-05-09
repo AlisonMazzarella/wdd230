@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 60em) {
   .navigation {
     display: flex;
   }
@@ -12,4 +12,5 @@
   .navigation li a {
     color: yellow; 
   }
+  
 }
