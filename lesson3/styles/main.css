@@ -34,6 +34,7 @@ h1, h2, p {
   margin-right: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -77,8 +78,16 @@ footer {
   line-height: 1.2;
 }
 
-.map-link {
+.map-link a {
   margin-left: auto;
+  color: white;
+  text-decoration: none;
+}
+
+.map-link a:hover {
+  margin-left: auto;
+  color: black;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
