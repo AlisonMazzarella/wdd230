@@ -1,6 +1,26 @@
+footer {
+    background-color: #00674b;
+    color: white;
+    position: flex;
+    bottom: 0;
+}
+
+.logo-footer {
+    height: 120px;
+}
+
+.map-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.map-link a:hover {
+    color: yellow;
+}
+
 nav {
     margin: 0 auto;
-    max-width: 760px;
+    width: 100%;
     background-color: #00674b;
     color: white;
 }
@@ -51,4 +71,50 @@ img {
    
 .logo-text {
     font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+      "hero hero"
+      "events events"
+      "weather weather"
+      "news news"
+      "join join"
+      "spotlight spotlight";
+}
+
+ .grid-container > div {
+    background-color: gray;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    border-color: black;
+    border-width: 2px;
+}
+
+.events {
+    grid-area: events;
+}
+  
+.weather {
+    grid-area: weather;
+}
+
+.join {
+    grid-area: join;
+}
+  
+.news {
+    grid-area: news;
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.spotlight {
+    grid-area: spotlight;
 }

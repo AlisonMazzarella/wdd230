@@ -12,5 +12,39 @@
   .navigation li a {
     color: yellow; 
   }
+
+  .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+      "events hero hero spotlight"
+      "weather hero hero spotlight"
+      "join news news spotlight";
+  }
+
+  .events {
+    grid-area: events;
+  }
+  
+  .weather {
+    grid-area: weather;
+  }
+  
+  .join {
+    grid-area: join;
+  }
+  
+  .news {
+    grid-area: news;
+  }
+
+  .hero {
+    grid-area: hero;
+  }
+
+  .spotlight {
+    grid-area: spotlight;
+  }
   
 }
