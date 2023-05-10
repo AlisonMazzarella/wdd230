@@ -1,6 +1,9 @@
 @media only screen and (min-width: 60em) {
   .navigation {
     display: flex;
+    flex-direction: row;
+    transform: translate(-200%, 30%);
+    border: none;
   }
   .navigation li:first-child {
     display: none;
@@ -10,7 +13,8 @@
     flex: 1 1 100%;
   }
   .navigation li a {
-    color: yellow; 
+    color: white; 
+    font-size: 20px;
   }
 
   .grid-container {
@@ -52,6 +56,33 @@
   .spotlight {
     grid-area: spotlight;
     height: 610px;
+  }
+
+  .logo-footer img {
+    max-width: 50%;
+    padding-top: 10px;
+  }
+
+  .nav-icons {
+    transform: translate(400px);
+    float: right;
+    padding-top: 25px;
+  }
+
+  .logo-text {
+    text-align: left;
+  }
+
+  .modification {
+    bottom: 0;
+  }
+
+  .contact-info {
+    text-align: right;
+  }
+
+  .map-link {
+    align-content: right; 
   }
   
 }

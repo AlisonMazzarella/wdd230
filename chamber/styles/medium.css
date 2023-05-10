@@ -1,16 +1,37 @@
 @media only screen and (min-width: 32.5em) {
   .navigation {
-    display: flex;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    float: right;
+    border: solid 1px gray;
+    margin-right: 5px;
   }
+
   .navigation li:first-child {
+    display: block;
+  }
+
+  .navigation li {
     display: none;
   }
-  .navigation li {
+
+  .navigation a {
     display: block;
-    flex: 1 1 100%;
+    color: #fff;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none; 
   }
-  .navigation li a {
-    color: yellow; 
+
+  .navigation a:hover {
+    color: #000;
+    background-color: #fff;
+    font-weight: 700;
+  }
+
+  .responsive li {
+    display: block;
   }
 
   .grid-container {
@@ -48,6 +69,36 @@
 
   .spotlight {
     grid-area: spotlight;
+  }
+
+  footer {
+    flex-direction: row; 
+  }
+
+  .logo-footer img {
+    max-width: 80%;
+  }
+
+  .nav-icons {
+  float: right;
+  padding-right: 100px;
+  padding-top: 25px;
+  }
+
+  .logo-text {
+    text-align: left;
+  }
+
+  .modification {
+    bottom: 0;
+  }
+
+  .contact-info {
+    text-align: right;
+  }
+
+  .map-link {
+    align-content: right; 
   }
 
 }
