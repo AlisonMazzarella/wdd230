@@ -79,7 +79,7 @@ img {
     grid-gap: 10px;
     padding: 10px;
     grid-template-areas:
-      "hero hero"
+      "hero hero" 
       "events events"
       "weather weather"
       "news news"
@@ -98,24 +98,31 @@ img {
 
 .events {
     grid-area: events;
+    height: 100px;
 }
   
 .weather {
     grid-area: weather;
+    height: 100px;
 }
 
 .join {
     grid-area: join;
+    height: 100px;
 }
   
 .news {
     grid-area: news;
+    height: 100px;
 }
 
 .hero {
     grid-area: hero;
+    height: 100px;
 }
 
 .spotlight {
     grid-area: spotlight;
+    height: 200px;
+
 }
