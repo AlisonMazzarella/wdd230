@@ -77,6 +77,7 @@
 
   .logo-footer img {
     max-width: 80%;
+    padding-top: 10px;
   }
 
   .nav-icons {
@@ -85,8 +86,28 @@
   padding-top: 25px;
   }
 
-  .logo-text {
+  .logo-text h1 {
     text-align: left;
+    padding-top: 30px;
+    font-size: 22px;
+  }
+
+  .logo-text p {
+    text-align: left;
+    padding-top: 30px;
+    font-size: 20px;
+  }
+
+  .logo-image{
+    flex: 1;
+  }
+
+  .logo-image img {
+    max-width: 100%;
+  }
+
+  .logo-text{
+    flex: 3;
   }
 
   .modification {
@@ -94,11 +115,15 @@
   }
 
   .contact-info {
-    text-align: right;
+    float: right;
   }
 
   .map-link {
-    align-content: right; 
+    float: right; 
+  }
+
+  .footer-text {
+    text-align: left; 
   }
 
 }

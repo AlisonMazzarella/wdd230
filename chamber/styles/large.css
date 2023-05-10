@@ -1,9 +1,12 @@
 @media only screen and (min-width: 60em) {
-  .navigation {
+ .navigation {
     display: flex;
     flex-direction: row;
-    transform: translate(-200%, 30%);
+    transform: translate(-80%, 30%);
     border: none;
+    font-size: 40px;
+    word-spacing: 10px; 
+  
   }
   .navigation li:first-child {
     display: none;
@@ -71,6 +74,27 @@
 
   .logo-text {
     text-align: left;
+    padding-top: 30px;
+  }
+
+  .logo-text h1 {
+    font-size: 24px;
+  }
+
+  .logo-text p {
+    font-size: 22px;
+  }
+
+  .logo-image{
+    flex: 1;
+  
+  }
+  .logo-image img {
+    max-width: 100%;
+  }
+
+  .logo-text{
+    flex:3;
   }
 
   .modification {
@@ -78,11 +102,15 @@
   }
 
   .contact-info {
-    text-align: right;
+    float: right;
   }
 
   .map-link {
-    align-content: right; 
+    float: right; 
+  }
+
+  .footer-text {
+    text-align: left; 
   }
   
 }

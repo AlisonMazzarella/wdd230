@@ -11,7 +11,9 @@ footer {
     padding-bottom: 10px;
 }
 
-.modification {
+.modification-output {
+    margin-top: 10px;
+    padding-top: 5px;
     border-top: solid 2px gray;
 }
 
@@ -91,11 +93,15 @@ nav {
     align-items: left; 
     
 }
-   
-.logo-image img {
-    max-width: 50%;
+.logo-image{
+    flex: 1;
 }
-   
+.logo-image img {
+    max-width: 100%;
+}
+.logo-text{
+    flex:3;
+}
 .logo-text h1 {
     font-size: 20px;
     line-height: 1;
