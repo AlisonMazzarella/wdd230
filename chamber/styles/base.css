@@ -1,6 +1,7 @@
 footer {
     background-color: #00674b;
     color: white;
+    display: flex;
     position: flex;
     bottom: 0;
 }
