@@ -2,10 +2,8 @@
  .navigation {
     display: flex;
     flex-direction: row;
-    transform: translate(-80%, 30%);
+    transform: translate(-175%, 50%);
     border: none;
-    font-size: 40px;
-    word-spacing: 10px; 
   
   }
   .navigation li:first-child {
@@ -17,7 +15,7 @@
   }
   .navigation li a {
     color: white; 
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .grid-container {
@@ -66,15 +64,22 @@
     padding-top: 10px;
   }
 
+  .footer-text {
+    transform: translate(-440px, -10px);
+  }
+
+  .footer-text h4 {
+    font-size: 18px;
+  }
+
+  .footer-text p {
+    font-size: 16px;
+  }
+
   .nav-icons {
     transform: translate(400px);
     float: right;
     padding-top: 25px;
-  }
-
-  .logo-text {
-    text-align: left;
-    padding-top: 30px;
   }
 
   .logo-text h1 {
@@ -85,32 +90,28 @@
     font-size: 22px;
   }
 
-  .logo-image{
-    flex: 1;
-  
-  }
+  .logo-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
   .logo-image img {
-    max-width: 100%;
+    max-width: 10%;
   }
 
-  .logo-text{
-    flex:3;
-  }
-
-  .modification {
-    bottom: 0;
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    transform: translate(150px, -100px);
   }
 
   .contact-info {
-    float: right;
+    transform: translate(400px, -40px);
   }
 
   .map-link {
-    float: right; 
-  }
-
-  .footer-text {
-    text-align: left; 
+    transform: translate(-100px, 15px);
   }
   
 }

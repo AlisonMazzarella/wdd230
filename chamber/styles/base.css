@@ -15,6 +15,7 @@ footer {
     margin-top: 10px;
     padding-top: 5px;
     border-top: solid 2px gray;
+    line-height: 20px;
 }
 
 .nav-date {
@@ -29,6 +30,7 @@ footer {
 
 .logo-footer img {
     max-width: 50%;
+    padding-top: 10px;
 }
 
 .map-link a {
@@ -88,28 +90,33 @@ nav {
     display: block;
 }
 
-.logo-container {
+.logo-image {
     display: flex;
-    align-items: left; 
-    
+    align-items: center;
+    justify-content: flex-start;
 }
-.logo-image{
-    flex: 1;
-}
+
 .logo-image img {
-    max-width: 100%;
+    max-width: 30%;
 }
-.logo-text{
-    flex:3;
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    transform: translate(100px, -70px);
 }
+
+.logo-text h1,
+.logo-text p {
+    margin: 0;
+}
+
 .logo-text h1 {
     font-size: 20px;
-    line-height: 1;
 }
 
 .logo-text p {
     font-size: 18px;
-    line-height: 1;
 }
 
 .grid-container {

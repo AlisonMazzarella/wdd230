@@ -72,12 +72,18 @@
   }
 
   footer {
+    display: flex;
     flex-direction: row; 
+    justify-content: space-between;
+    position: relative; 
   }
 
   .logo-footer img {
-    max-width: 80%;
+    max-width: 60%;
     padding-top: 10px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    transform: translate(-50px, 0);
   }
 
   .nav-icons {
@@ -87,43 +93,68 @@
   }
 
   .logo-text h1 {
-    text-align: left;
-    padding-top: 30px;
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .logo-text p {
-    text-align: left;
-    padding-top: 30px;
-    font-size: 20px;
+    font-size: 24px;
   }
 
-  .logo-image{
-    flex: 1;
-  }
-
-  .logo-image img {
-    max-width: 100%;
-  }
-
-  .logo-text{
-    flex: 3;
-  }
-
-  .modification {
+  .modification-output {
+    position: absolute;
+    left: 0;
+    right: 0;
     bottom: 0;
+    font-size: 18px;
+    flex-direction: column; 
+    margin-bottom: 5px;
+
   }
 
   .contact-info {
-    float: right;
+    float: none;
+    order: 3;
+    transform: translate(110px, -40px);
+    font-size: 18px;
   }
 
   .map-link {
-    float: right; 
+    float: none; 
+    order: 4;
+    padding-right: 20px;
+    transform: translate(-50px, 20px);
+    font-size: 18px;
   }
 
   .footer-text {
     text-align: left; 
+    order: 1;
+    margin-top: 0;
+    transform: translate(-100px, 0);
   }
+
+  .footer-text h4 {
+    font-size: 18px;
+  }
+
+  .footer-text p {
+    font-size: 16px;
+  }
+
+  .logo-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-image img {
+    max-width: 20%;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    transform: translate(150px, -100px);
+}
 
 }
