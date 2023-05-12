@@ -1,51 +1,62 @@
-footer {
-    background-color: #00674b;
+.header-grid-container {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #006241;
     color: white;
-    flex-direction: column; 
-    display: flex;
-    bottom: 0;
-    align-items: center;
-    text-align: center;
-    line-height: 1;
-    padding-bottom: 10px;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+        "logo-image logo-text" 
+        "navigation nav-icons"
+        "nav-date nav-date";
 }
 
-.modification-output {
-    margin-top: 10px;
-    padding-top: 5px;
-    border-top: solid 2px gray;
-    line-height: 20px;
+.logo-image img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    grid-area: logo-image;
+    max-width: 50%;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    grid-area: logo-text;
+}
+
+.logo-text h1, p { 
+    margin: 5px;
+}
+
+.logo-text h1 {
+    font-size: 20px;
+}
+
+.logo-text p {
+    font-size: 18px;
+}
+
+.nav-icons {
+    float: right;
+    padding-right: 5px;
+    padding-top: 25px;
+    grid-area: nav-icons;
 }
 
 .nav-date {
-    border: solid 8px #2A8163;
-    background-color: #2A8163;
+    border: solid 8px #FF7F50;
+    background-color: #FF7F50;
     max-width: 100%; 
     box-sizing: border-box;
     text-align: center; 
     font-size: 20px; 
     padding: 5px;
-}
-
-.logo-footer img {
-    max-width: 50%;
-    padding-top: 10px;
-}
-
-.map-link a {
-    text-decoration: none;
-    color: white;
-}
-
-.map-link a:hover {
-    color: yellow;
-}
-
-nav {
-    margin: 0 auto;
-    width: 100%;
-    background-color: #00674b;
-    color: white;
+    color: black;
+    grid-area: nav-date;
 }
 
 .navigation {
@@ -55,12 +66,7 @@ nav {
     float: right;
     border: solid 1px gray;
     margin-right: 5px;
-}
-
-.nav-icons {
-    float: right;
-    padding-right: 5px;
-    padding-top: 25px;
+    grid-area: navigation;
 }
 
 .navigation li:first-child {
@@ -89,50 +95,21 @@ nav {
     display: block;
 }
 
-.logo-image {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.logo-image img {
-    max-width: 30%;
-}
-
-.logo-text {
-    display: flex;
-    flex-direction: column;
-    transform: translate(100px, -70px);
-}
-
-.logo-text h1,
-.logo-text p {
-    margin: 0;
-}
-
-.logo-text h1 {
-    font-size: 20px;
-}
-
-.logo-text p {
-    font-size: 18px;
-}
-
-.grid-container {
+.main-grid-container {
     display: grid;
     grid-gap: 10px;
     padding: 10px;
     grid-template-areas:
-      "hero hero" 
-      "events events"
-      "weather weather"
-      "news news"
-      "join join"
-      "spotlight spotlight";
+      "hero" 
+      "events"
+      "weather"
+      "news"
+      "join"
+      "spotlight";
 }
 
- .grid-container > div {
-    background-color: gray;
+ .main-grid-container > div {
+    background-color: #A0A0A0;
     text-align: center;
     padding: 20px 0;
     font-size: 20px;
@@ -169,4 +146,62 @@ nav {
     grid-area: spotlight;
     height: 200px;
 
+}
+
+.footer-grid-container {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #006241;
+    color: white;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+        "logo-footer"
+        "footer-text"
+        "contact-info"
+        "map-link"
+        "modification-output";
+}
+
+.logo-footer img {
+    max-width: 30%;
+    padding-top: 10px;
+    grid-area: logo-footer;
+}
+
+.footer-text {
+    grid-area: footer-text;
+}
+
+.footer-text h1 {
+    font-size: 18px;
+}
+
+.footer-text p {
+    font-size: 16px;
+}
+
+.contact-info {
+    grid-area: contact-info;
+    font-size: 16px;
+}
+
+.map-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.map-link a:hover {
+    color: yellow;
+}
+
+.modification-output {
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: solid 2px gray;
+    line-height: 20px;
+    grid-area: modification-output;
+    font-size: 16px;
 }

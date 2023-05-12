@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alison Mazzarella-Woelzl's WDD 230 Assignments">
+    <meta name="description" content="Alison Mazzarella-Woelzl WDD 230 Assignments">
     <meta name="keywords" content="Peachtree City Chamber of Commerce, WDD 230 Assignments, Alison Mazzarella-Woelzl">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -14,63 +14,63 @@
     <title>Peachtree City Chamber of Commerce</title>
 </head>
 <body>
-  <header>
-    <nav>
-        <ul class="navigation">
-            <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
-            <li><a href="#">Discover</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="nav-icons">
-            <a href="https://www.facebook.com/notreal" target="_blank">
-                <img src="images/icons8-facebook-48.png" alt="Facebook Icon by Icons8" style="height: 30px; width: auto;">
-            </a>
-            <a href="https://www.linkedin.com/notreal" target="_blank">
-                <img src="images/icons8-linkedin-circled-48.png" alt="LinkedIn Icon by Icons8" style="height: 30px; width: auto;">
-            </a>
-        </div>
-        <div class="logo-image">
-            <img src="images/peachtree-city-chamber-of-commerce-logo.png" alt="Peachtree City Chamber of Commerce Logo by AndreaCharlesta on Freepik">
-        </div>
-        <div class="logo-text">
+    <header>
+        <div class="header-grid-container">
+          <div class="navigation">
+            <ul>
+              <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Discover</a></li>
+              <li><a href="#">Directory</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="nav-icons">
+            <img src="images/icons8-facebook-48.png" alt="Facebook Icon" style="height: 30px; width: auto;">
+            <img src="images/icons8-linkedin-circled-48.png" alt="LinkedIn Icon" style="height: 30px; width: auto;">
+          </div>
+          <div class="logo-image">
+            <img src="images/peachtree-city-chamber-of-commerce-logo.png" alt="Peachtree City Chamber of Commerce Logo">
+          </div>
+          <div class="logo-text">
             <h1>Peachtree City</h1>
             <p>Chamber of Commerce</p>
+          </div>
+          <div class="nav-date" id="currentDate"></div>
         </div>
-        <div class="nav-date" id="currentDate"></div>
-    </nav>
-  </header>
-  <main>
-    <div class="grid-container">
-        <div class="events">Event</div>
-        <div class="weather">Weather</div>
-        <div class="join">Join</div>
-        <div class="hero">Hero with site name and call to action</div>
-        <div class="news">News Release</div>
-        <div class="spotlight">Spotlight</div>
-    </div>
-  </main>
-  <footer>
-        <div class="logo-footer">
-            <img src="images/peachtree-city-chamber-of-commerce-logo.png" alt="Peachtree City Chamber of Commerce Logo by AndreaCharlesta on Freepik">
+    </header>
+    <main>
+        <div class="main-grid-container">
+            <div class="events">Event</div>
+            <div class="weather">Weather</div>
+            <div class="join">Join</div>
+            <div class="hero">Hero with site name and call to action</div>
+            <div class="news">News Release</div>
+            <div class="spotlight">Spotlight</div>
         </div>
-        <div class="footer-text">
-            <h4>Peachtree City Chamber of Commerce</h4>
-            <p>123 Main St<br> Peachtree City, GA 30269</p>
+    </main>
+    <footer>
+        <div class="footer-grid-container">
+            <div class="logo-footer">
+                <img src="images/peachtree-city-chamber-of-commerce-logo.png" alt="Peachtree City Chamber of Commerce Logo">
+            </div>
+            <div class="footer-text">
+                <h1>Peachtree City Chamber of Commerce</h1>
+                <p>123 Main St<br> Peachtree City, GA 30269</p>
+            </div>
+            <div class="contact-info">
+                <p>info@peachtreecitychamber.com</p>
+                <p>+1(770) 080-4000</p>
+            </div>
+            <div class="map-link">
+                <a href="https://www.google.com/maps/place/Peachtree+City,+GA/" target="_blank">
+                    <img src="images/icons8-round-pushpin-48.png" alt="Pushpin Map Icon by Icons8" style="height: 20px; width: auto;">Location
+                </a>
+            </div>
+            <div class="modification-output" id="modificationOutput"></div>
         </div>
-    
-    
-        <div class="contact-info">
-            <p>info@peachtreecitychamber.com</p>
-            <p>+1(770) 080-4000</p>
-        </div>
-        <div class="map-link">
-            <a href="https://www.google.com/maps/place/Peachtree+City,+GA/" target="_blank">
-                <img src="images/icons8-round-pushpin-48.png" alt="Pushpin Map Icon by Icons8" style="height: 20px; width: auto;"> Location</a>
-        </div>
-        <div class="modification-output" id="modificationOutput"></div>
-  </footer>  
+    </footer>  
     <script src="scripts/date.js"></script>
     <script src="scripts/modification.js"></script>
     <script src="scripts/hamburger.js"></script>   
