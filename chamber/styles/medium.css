@@ -8,20 +8,36 @@
   }
   
   .main-grid-container {
-    display: grid;
-    grid-gap: 10px;
-    padding: 10px;
     grid-template-areas:
       "hero hero" 
       "news news"
       "spotlight spotlight"
       "join join"
-      "event weather";
+      "events weather";
   }
 
   .footer-grid-container {
     grid-template-areas:
-        "logo-address logo-address"
-        "contact-map contact-map";
+      "logo-address contact-map";
+  }
+
+  .logo-address {
+    text-align: left;
+  }
+
+  .logo-address h1 {
+    font-size: 20px;
+  }
+
+  .logo-address p {
+    font-size: 18px;
+  }
+
+  .contact-map a {
+    font-size: 18px;
+  }
+
+  .contact-map p {
+    font-size: 18px;
   }
 }
