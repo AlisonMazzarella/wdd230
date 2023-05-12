@@ -1,8 +1,4 @@
 @media only screen and (min-width: 32.5em) {
-  .logo-text img {
-    max-width: 40%;
-  }
-  
   .logo-text h1 {
     font-size: 20px;
   }

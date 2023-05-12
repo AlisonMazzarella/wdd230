@@ -1,8 +1,14 @@
 @media only screen and (min-width: 60em) {
-  .logo-text img {
-    max-width: 50%;
+  .header-grid-container {
+    grid-template-areas:
+        "logo-text navigation nav-icons";
+        grid-template-columns: 1fr 1fr auto;
   }
   
+  .logo-text img {
+    max-width: 20%;
+  }
+
   .logo-text h1 {
     font-size: 22px;
   }
@@ -13,8 +19,7 @@
   
   .navigation {
     display: flex;
-    flex-direction: row;
-    text-align: center;
+    align-items: center;
   }
 
   .navigation li:first-child {
@@ -22,13 +27,20 @@
   }
 
   .navigation li {
-    display: block;
-    flex: 1 1 100%;
+    display: inline-block;
+    flex: 0 0 auto;
+    margin-right: 30px;
   }
 
   .navigation li a {
     color: white; 
     font-size: 25px;
+  }
+
+  .nav-icons {
+    justify-self: end;
+    margin-top: 87px;
+    padding-right: 10px;
   }
 
   .main-grid-container {
@@ -39,34 +51,29 @@
       "join news spotlight";
   }
 
-  .events {
-    height: 180px;
-  }
-  
-  .weather {
-    height: 180px;
-  }
-  
-  .join {
-    height: 150px;
-  }
-  
-  .news {
-    height: 150px;
-  }
-
-  .hero {
-    height: 410px;
-  }
-
-  .spotlight {
-    height: 610px;
-  }
-
   .footer-grid-container {
     grid-template-areas:
-        "logo-address logo-address"
-        "contact-map contact-map";
+        "logo-address contact-map";
+  }
+
+  .logo-address {
+    text-align: left;
+  }
+
+  .logo-address h1 {
+    font-size: 20px;
+}
+
+  .logo-address p {
+    font-size: 18px;
+  }
+
+  .contact-map a {
+    font-size: 18px;
+  }
+
+  .contact-map p {
+    font-size: 18px;
   }
 
 }
