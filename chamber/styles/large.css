@@ -1,8 +1,8 @@
 @media only screen and (min-width: 60em) {
   .header-grid-container {
     grid-template-areas:
-        "logo-text navigation nav-icons";
-        grid-template-columns: 1fr 1fr auto;
+      "logo-text navigation nav-icons";
+    grid-template-columns: 1fr 1fr auto;
   }
   
   .logo-text img {
@@ -53,7 +53,7 @@
 
   .footer-grid-container {
     grid-template-areas:
-        "logo-address contact-map";
+      "logo-address contact-map";
   }
 
   .logo-address {
@@ -62,7 +62,7 @@
 
   .logo-address h1 {
     font-size: 20px;
-}
+  }
 
   .logo-address p {
     font-size: 18px;
@@ -75,5 +75,4 @@
   .contact-map p {
     font-size: 18px;
   }
-
 }
