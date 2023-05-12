@@ -1,30 +1,22 @@
-.header-grid-container {
-    margin: 0 auto;
-    width: 100%;
+header {
     background-color: #006241;
     color: white;
-    display: grid;
-    grid-gap: 10px;
-    padding: 10px;
-    grid-template-areas:
-        "logo-image logo-text" 
-        "navigation nav-icons"
-        "nav-date nav-date";
 }
 
-.logo-image img {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    grid-area: logo-image;
-    max-width: 50%;
+.header-grid-container {
+    display: grid;
+    grid-template-areas:
+        "logo-text nav-icons navigation" 
+        "nav-date nav-date nav-date";
+}
+
+.logo-text img {
+    padding-top: 10px;
+    max-width: 30%;
+    grid-area: logo-text;
 }
 
 .logo-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     grid-area: logo-text;
 }
 
@@ -33,39 +25,29 @@
 }
 
 .logo-text h1 {
-    font-size: 20px;
-}
-
-.logo-text p {
     font-size: 18px;
 }
 
+.logo-text p {
+    font-size: 16px;
+}
+
 .nav-icons {
-    float: right;
-    padding-right: 5px;
-    padding-top: 25px;
     grid-area: nav-icons;
+    margin-top: 25px;
 }
 
 .nav-date {
     border: solid 8px #FF7F50;
     background-color: #FF7F50;
-    max-width: 100%; 
-    box-sizing: border-box;
     text-align: center; 
     font-size: 20px; 
-    padding: 5px;
     color: black;
     grid-area: nav-date;
 }
 
 .navigation {
     list-style: none;
-    text-align: center;
-    padding: 0;
-    float: right;
-    border: solid 1px gray;
-    margin-right: 5px;
     grid-area: navigation;
 }
 
@@ -98,7 +80,7 @@
 .main-grid-container {
     display: grid;
     grid-gap: 10px;
-    padding: 10px;
+    padding: 5px;
     grid-template-areas:
       "hero" 
       "events"
@@ -148,60 +130,61 @@
 
 }
 
-.footer-grid-container {
-    margin: 0 auto;
-    width: 100%;
+footer {
     background-color: #006241;
-    color: white;
-    display: grid;
-    grid-gap: 10px;
-    padding: 10px;
-    grid-template-areas:
-        "logo-footer"
-        "footer-text"
-        "contact-info"
-        "map-link"
-        "modification-output";
+    color: white; 
 }
 
-.logo-footer img {
+.footer-grid-container {
+    display: grid;
+    grid-template-areas:
+        "logo-address" 
+        "contact-map"; 
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-address img {
     max-width: 30%;
     padding-top: 10px;
     grid-area: logo-footer;
 }
 
-.footer-text {
-    grid-area: footer-text;
+.logo-address {
+    grid-area: logo-address;
+    text-align: center;
 }
 
-.footer-text h1 {
+.logo-address h1 {
     font-size: 18px;
 }
 
-.footer-text p {
+.logo-address p {
     font-size: 16px;
 }
 
-.contact-info {
-    grid-area: contact-info;
-    font-size: 16px;
+.contact-map {
+    grid-area: contact-map;
+    text-align: center;
 }
 
-.map-link a {
+.contact-map a {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 16px;
     text-decoration: none;
     color: white;
-    font-size: 16px;
 }
 
-.map-link a:hover {
+.contact-map a:hover {
     color: yellow;
 }
 
 .modification-output {
-    margin-top: 10px;
-    padding-top: 5px;
+    padding: 5px;
     border-top: solid 2px gray;
-    line-height: 20px;
-    grid-area: modification-output;
     font-size: 16px;
+    text-align: center;
 }

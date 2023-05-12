@@ -1,8 +1,20 @@
 @media only screen and (min-width: 60em) {
+  .logo-text img {
+    max-width: 50%;
+  }
+  
+  .logo-text h1 {
+    font-size: 22px;
+  }
+
+  .logo-text p {
+    font-size: 20px;
+  }
+  
   .navigation {
     display: flex;
     flex-direction: row;
-    border: none;
+    text-align: center;
   }
 
   .navigation li:first-child {
@@ -20,9 +32,6 @@
   }
 
   .main-grid-container {
-    display: grid;
-    grid-gap: 10px;
-    padding: 10px;
     grid-template-rows: 2fr 2fr 2fr; 
     grid-template-areas:
       "events hero spotlight"
@@ -52,6 +61,12 @@
 
   .spotlight {
     height: 610px;
+  }
+
+  .footer-grid-container {
+    grid-template-areas:
+        "logo-address logo-address"
+        "contact-map contact-map";
   }
 
 }
