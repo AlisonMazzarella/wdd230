@@ -11,7 +11,7 @@
     grid-template-areas:
       "hero hero" 
       "news news"
-      "spotlight spotlight"
+      "spotlight1 spotlight2"
       "join join"
       "events weather";
   }

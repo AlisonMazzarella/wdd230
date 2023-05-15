@@ -90,12 +90,12 @@ header {
       "events"
       "weather"
       "news"
-      "join"
-      "spotlight";
+      "spotlight1"
+      "spotlight2";
 }
 
 .main-grid-container > div {
-    background-color: #A0A0A0;
+    background-color: #FDDA0D;
     text-align: center;
     padding: 20px 0;
     font-size: 20px;
@@ -105,6 +105,29 @@ header {
 
 .events {
     grid-area: events;
+    display: flex;
+    align-items: center;
+}
+
+.events h1,
+.weather h1,
+.join h1,
+.news h1,
+.spotlight1 h1,
+.spotlight2 h1, 
+.spotlight3 h1 {
+    font-size: 22px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.events h2 {
+    font-size: 20px;
+}
+
+.events img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
   
 .weather {
@@ -123,8 +146,12 @@ header {
     grid-area: hero;
 }
 
-.spotlight {
-    grid-area: spotlight;
+.spotlight1 {
+    grid-area: spotlight1;
+}
+
+.spotlight2 {
+    grid-area: spotlight2;
 }
 
 footer {

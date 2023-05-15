@@ -44,9 +44,13 @@
 
   .main-grid-container {
     grid-template-areas:
-      "events hero spotlight"
-      "weather hero spotlight"
-      "join news spotlight";
+      "events hero spotlight1"
+      "weather hero spotlight2"
+      "join news spotlight3";
+  }
+
+  .spotlight3 {
+    grid-area: spotlight3;
   }
 
   .footer-grid-container {

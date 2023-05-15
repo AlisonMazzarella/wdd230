@@ -7,5 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     var formattedDate = daysOfWeek[currentDate.getDay()] + ', ' + currentDate.getDate() + ' ' + months[currentDate.getMonth()] + ' ' + currentDate.getFullYear();
     
+    if (currentDate.getDay() === 1) {
+        formattedDate += "\n🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+    }
+    
     currentDateContainer.innerText = formattedDate;
 });
