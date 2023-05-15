@@ -37,6 +37,11 @@ header {
     margin-top: 25px;
 }
 
+.nav-icons img {
+    height: 30px;
+    width: auto;
+}
+
 .nav-date {
     border: solid 8px #FF7F50;
     background-color: #FF7F50;

@@ -2,7 +2,6 @@
   .header-grid-container {
     grid-template-areas:
       "logo-text navigation nav-icons";
-    grid-template-columns: 1fr 1fr auto;
   }
   
   .logo-text img {
@@ -39,12 +38,11 @@
 
   .nav-icons {
     justify-self: end;
-    margin-top: 87px;
+    margin-top: 60px;
     padding-right: 10px;
   }
 
   .main-grid-container {
-    grid-template-rows: 2fr 2fr 2fr; 
     grid-template-areas:
       "events hero spotlight"
       "weather hero spotlight"
