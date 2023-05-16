@@ -16,6 +16,20 @@
       "events weather";
   }
 
+  .join {
+    grid-area: join;
+    display: block;
+  }
+
+  .hero span {
+    top: 10%;
+    left: 55%;
+  }
+
+  .spotlight3 {
+    display: none;
+  }
+
   .footer-grid-container {
     grid-template-areas:
       "logo-address contact-map";

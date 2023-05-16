@@ -51,6 +51,7 @@
 
   .spotlight3 {
     grid-area: spotlight3;
+    display: block;
   }
 
   .footer-grid-container {
