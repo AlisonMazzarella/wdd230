@@ -106,8 +106,6 @@ header {
 
 .events {
     grid-area: events;
-    display: flex;
-    align-items: center;
 }
 
 .events h1,
@@ -190,7 +188,7 @@ header {
     width: 100%;
 }
 
-.hero span {
+.hero-button {
     position: absolute;
     top: 10%;
     left: 35%;
