@@ -101,6 +101,7 @@ header {
     font-size: 20px;
     border-color: black;
     border-width: 2px;
+    box-shadow: 0 2px 4px rgba(0, 98, 65, 0.7);
 }
 
 .events {
@@ -120,22 +121,56 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.events h2 {
+.events h2,
+.weather h2,
+.spotlight1 h2,
+.spotlight2 h2, 
+.spotlight3 h2 {
     font-size: 20px;
 }
 
+.events p,
+.weather p,
+.join p,
+.news p,
+.spotlight1 p,
+.spotlight2 p, 
+.spotlight3 p {
+    font-size: 18px;
+}
+
 .events img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: auto;
+    height: 30px;
 }
   
 .weather {
     grid-area: weather;
 }
 
+.weather img {
+    height: 100px;
+    width: auto;
+}
+
 .join {
     grid-area: join;
+}
+
+.join button {
+    padding: 20px; 
+    margin-bottom: 10px;
+    font-size: 24px; 
+    background-color: #006241; 
+    color: #FFFFFF; 
+    border: none; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+  
+.join button:hover {
+    background-color: #FF7F50; 
+    cursor: pointer; 
 }
   
 .news {
@@ -144,6 +179,46 @@ header {
 
 .hero {
     grid-area: hero;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    object-position: center;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.hero span {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 98, 65, 0.7);
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero button {
+    padding: 20px; 
+    margin-bottom: 10px;
+    font-size: 24px; 
+    background-color: #006241; 
+    color: #FFFFFF; 
+    border: none; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2); 
+}
+  
+.hero button:hover {
+    background-color: #FF7F50; 
+    cursor: pointer; 
 }
 
 .spotlight1 {
@@ -152,6 +227,13 @@ header {
 
 .spotlight2 {
     grid-area: spotlight2;
+}
+
+.spotlight1 img,
+.spotlight2 img, 
+.spotlight3 img {
+    height: 80px;
+    width: auto;
 }
 
 footer {
