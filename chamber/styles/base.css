@@ -197,12 +197,13 @@ header {
 .hero-button {
     position: absolute;
     top: 10px;
-    left: 100px;
+    left: 200px;
     text-align: center;
     color: white;
     background-color: rgba(0, 98, 65, 0.7);
     padding: 5px;
     margin-right: 5px;
+    width: 100px;
 }
 
 .hero h1 {
