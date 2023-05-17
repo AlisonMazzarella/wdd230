@@ -49,6 +49,12 @@
       "join news spotlight3";
   }
 
+  .hero-button {
+    top: 20px;
+    left: 100px;
+    padding: 10px;
+  }
+
   .spotlight3 {
     grid-area: spotlight3;
     display: block;

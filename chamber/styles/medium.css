@@ -6,6 +6,15 @@
   .logo-text p {
     font-size: 18px;
   }
+
+  .nav-icons img {
+    height: 50px;
+    width: auto;
+  }
+
+  .navigation {
+    font-size: 30px;
+  }
   
   .main-grid-container {
     grid-template-areas:
@@ -22,8 +31,17 @@
   }
 
   .hero-button {
-    top: 10%;
-    left: 55%;
+    top: 20px;
+    left: 600px;
+    padding: 10px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .hero button {
+    font-size: 20px; 
   }
 
   .spotlight3 {

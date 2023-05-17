@@ -69,6 +69,8 @@ header {
     color: #fff;
     text-align: center;
     text-decoration: none; 
+    line-height: 1;
+    padding: 10px;
 }
 
 .navigation a:hover {
@@ -102,6 +104,10 @@ header {
     border-color: black;
     border-width: 2px;
     box-shadow: 0 2px 4px rgba(0, 98, 65, 0.7);
+}
+
+.main-grid-container > .hero {
+    padding: 0;
 }
 
 .events {
@@ -190,24 +196,24 @@ header {
 
 .hero-button {
     position: absolute;
-    top: 10%;
-    left: 35%;
+    top: 10px;
+    left: 100px;
     text-align: center;
     color: white;
     background-color: rgba(0, 98, 65, 0.7);
     padding: 5px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .hero h1 {
-    font-size: 24px;
+    font-size: 18px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero button {
     padding: 20px; 
     margin-bottom: 10px;
-    font-size: 24px; 
+    font-size: 16px; 
     background-color: #006241; 
     color: #FFFFFF; 
     border: none; 
