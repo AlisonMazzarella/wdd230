@@ -1,0 +1,15 @@
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-container img {
+    transition: opacity 0.5s ease-in-out;
+}
+  
+.image-container img[data-loaded="true"] {
+    opacity: 1;
+}
+  
