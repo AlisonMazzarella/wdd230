@@ -1,0 +1,76 @@
+:root {
+    --table-bg-color: hsla(0, 0%, 10%, .8);
+    --table-bg-color-light: hsla(0, 0%, 10%, 1);
+    --text-color-dark: hsla(0, 0%, 10%, 1);
+    --text-color-light: hsla(0, 0%, 100%, 1);
+    --border-color: hsla(0, 0%, 20%, .8);
+    --border-color-light: hsla(0, 0%, 33%, .3);
+    --zebra-bg-color: hsl(0, 0%, 93%);
+}
+  
+body {
+    font-family: "EB Garamond", Arial, serif;
+}
+  
+table {
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+  
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+}
+  
+thead th {
+    background-color: var(--table-bg-color);
+    color: var(--text-color-light);
+}
+
+td {
+    font-weight: bold;
+}
+  
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid var(--border-color-light);
+}
+  
+th {
+    font-size: larger;
+}
+  
+th[scope="colgroup"][colspan="4"],
+th[scope="colgroup"][colspan="1"] {
+    background-color: black;
+}
+  
+td.basic,
+td.premium,
+td.deluxe {
+    background-color: var(--table-bg-color);
+    color: var(--text-color-light);
+}
+  
+tbody tr:nth-child(even) {
+    background-color: var(--zebra-bg-color);
+}
+  
+.check-mark {
+    font-size: 20px;
+    color: #784B84;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.cross-mark {
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
