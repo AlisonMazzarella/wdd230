@@ -37,34 +37,42 @@
           </div>
         </div>
         <div class="nav-date" id="currentDate"></div>
+        <div class="visit-info" id="visitInfo"></div>
     </header>
     <main>
-        <h1>Discover Peachtree City</h1>
-        <div class="image-column">
-            <img src="images/beach.webp" alt="Image 1">
-            <p>Description for Image 1</p>
-          </div>
-        
-          <div class="image-column">
-            <img src="images/concert.webp" alt="Image 2">
-            <p>Description for Image 2</p>
-          </div>
-        
-          <div class="image-column">
-            <img src="images/golfclub.webp" alt="Image 3">
-            <p>Description for Image 3</p>
-          </div>
-        
-          <div class="image-column">
-            <img src="images/hiking.webp" alt="Image 4">
-            <p>Description for Image 4</p>
-          </div>
-        
-          <div class="image-column">
-            <img src="images/downtown.webp" alt="Image 5">
-            <p>Description for Image 5</p>
-          </div>
-    </main>
+      <div class="image-grid-container">
+        <div class="beach">
+          <img src="images/placeholder.webp" data-src="images/beach.webp" alt="Image of Beach" width="500" height="400">
+          <p>The beaches of Peachtree City, GA, attract a vibrant community of beachgoers. 
+          With a population of approximately 50,000 residents living near the beaches, these scenic coastal areas have become a popular destination for both locals and visitors.</p>
+        </div>
+        <div class="concert">
+          <img src="images/placeholder.webp" data-src="images/concert.webp" alt="Image of Concert" width="500" height="400">
+          <p>Peachtree City has a vibrant local music community, with talented musicians and bands adding to the concert scene. 
+          This creates opportunities for local artists to showcase their talents and gain exposure while contributing to the overall diversity and richness of the concert experience in the city.</p>
+        </div>
+        <div class="golf">
+          <img src="images/placeholder.webp" data-src="images/golfclub.webp" alt="Image of Golf Club" width="500" height="400">
+          <p>The golf clubs in Peachtree City serve as more than just golfing destinations; they also foster a sense of community and engagement. 
+          Residents and golf club members often participate in social events, tournaments, and charity fundraisers, strengthening community bonds and promoting a shared passion for the sport.</p>
+        </div>
+        <div class="downtown">
+          <img src="images/placeholder.webp" data-src="images/downtown.webp" alt="Image of Downtown" width="500" height="400">
+          <p>Downtown Peachtree City appeals to individuals of various age groups. Young professionals, families, and retirees all find something of interest in the downtown area. 
+          From trendy boutiques and family-friendly restaurants to cultural events and live music performances, downtown offers activities and experiences that cater to a broad range of ages, ensuring a vibrant and inclusive atmosphere.</p>
+        </div>
+        <div class="hiking">
+          <img src="images/placeholder.webp" data-src="images/hiking.webp" alt="Image of Hiking" width="500" height="400">
+          <p>Peachtree City organizes community events and guided hikes, bringing together hiking enthusiasts and promoting a sense of camaraderie among participants. 
+          These events provide opportunities for hikers to connect, share experiences, and discover new trails in a supportive and engaging environment.</p>
+        </div>
+        <div class="restaurants">
+          <img src="images/placeholder.webp" data-src="images/restaurant.webp" alt="Image of Restaurant" width="500" height="400">
+          <p>Peachtree City's restaurant scene is known for its culinary innovation, featuring a mix of local eateries, upscale dining establishments, casual cafes, and international cuisines. 
+          Residents and visitors can indulge in everything from Southern comfort food to gourmet international dishes, ensuring there's something for everyone.</p>
+        </div>
+      </div>
+    </main>        
     <footer>
         <div class="footer-grid-container">
             <div class="logo-address">
@@ -85,5 +93,7 @@
     <script src="scripts/date.js"></script>
     <script src="scripts/modification.js"></script>
     <script src="scripts/hamburger.js"></script> 
+    <script src="scripts/visits.js"></script> 
+    <script src="scripts/lazyload.js"></script> 
 </body>
 </html>

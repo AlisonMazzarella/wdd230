@@ -42,7 +42,7 @@ header {
     width: auto;
 }
 
-.nav-date {
+.nav-date, .visit-info {
     border: solid 8px #FF7F50;
     background-color: #FF7F50;
     text-align: center; 
@@ -303,4 +303,19 @@ footer {
     border-top: solid 2px gray;
     font-size: 16px;
     text-align: center;
+}
+
+.image-grid-container {
+    display: grid;
+    grid-gap: 5px;
+}
+
+.image-grid-container img {
+    max-width: 100%;
+    height: auto;
+}
+  
+.beach, .concert, .golf, .downtown, .hiking, .restaurants {
+    background-color: #FDDA0D;
+    padding: 10px;
 }
