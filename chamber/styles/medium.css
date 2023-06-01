@@ -87,4 +87,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
   }
+
+  .image-grid-container p {
+    font-size: 18px;
+  }
 }
