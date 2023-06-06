@@ -350,3 +350,71 @@ footer {
     color: black;
     margin-bottom: 10px;
 }
+
+.form-title {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.membership-form {
+    background-color: lightgray;
+}
+
+#membership_level {
+    background-color: white;
+}
+  
+.membership-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+.membership-form input[type="text"],
+.membership-form input[type="email"],
+.membership-form input[type="tel"],
+.membership-form textarea,
+.membership-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+  
+.membership-form select {
+    appearance: none;
+    padding-right: 20px;
+    background: url("images/select-arrow.png") no-repeat right center;
+}
+  
+.membership-form p {
+    font-weight: bold;
+    margin-top: 15px;
+}
+  
+.membership-form ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+  
+.membership-form ul li {
+    list-style: disc;
+    margin-left: 20px;
+}
+  
+.membership-form input[type="submit"] {
+    background-color: #FDDA0D;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+  
+.membership-form input[type="submit"]:hover {
+    background-color: #FF7F50;
+}
