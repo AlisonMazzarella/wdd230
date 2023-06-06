@@ -354,7 +354,6 @@ footer {
 .form-title {
     color: red;
     font-size: 24px;
-    margin-bottom: 10px;
 }
 
 .membership-form {
@@ -379,15 +378,12 @@ footer {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 10px;
 }
   
 .membership-form select {
-    appearance: none;
     padding-right: 20px;
-    background: url("images/select-arrow.png") no-repeat right center;
 }
   
 .membership-form p {
@@ -410,7 +406,6 @@ footer {
     color: #000;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
 }
