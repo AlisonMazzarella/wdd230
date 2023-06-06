@@ -319,3 +319,34 @@ footer {
     background-color: #FDDA0D;
     padding: 10px;
 }
+
+.thank-you-container {
+    position: relative;
+    height: 100vh;
+    background-image: url("/chamber/images/Peachtree-City.webp");
+    background-position: center;
+}
+
+.thank-you-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #FDDA0D;
+}
+
+.thank-you-overlay h2 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.thank-you-overlay p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+}

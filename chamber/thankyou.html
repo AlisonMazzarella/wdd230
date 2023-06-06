@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <title>Membership Application Form</title>
+    <title>Thank You Form</title>
 </head>
 <body>
     <header>
@@ -39,51 +39,15 @@
         <div class="nav-date" id="currentDate"></div>
     </header>
     <main>
-        <h1>Membership Application</h1>
-  <form method="get" action="thankyou.html">
-
-    <label for="fancy_name">Name/Title:</label>
-    <input type="text" id="business_name" name="business_name" required><br>
-
-    <label for="first_name">First Name:</label>
-    <input type="text" id="first_name" name="first_name" required><br>
-
-    <label for="last_name">Last Name:</label>
-    <input type="text" id="last_name" name="last_name" required><br>
-
-    <label for="position_title">Job Title:</label>
-    <input type="text" id="position_title" name="position_title" pattern="[a-zA-Z\s-]{7,}" title="Please enter at least 7 characters with only letters, hyphens, and spaces."><br>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="example@example.com" required><br>
-
-    <label for="phone">Cell Phone Number:</label>
-    <input type="tel" id="phone" name="phone" required><br>
-
-    <label for="membership_level">Membership Level:</label>
-    <select id="membership_level" name="membership_level">
-      <option value="NP Membership">NP Membership (Non-profit)</option>
-      <option value="Bronze Membership">Bronze Membership</option>
-      <option value="Silver Membership">Silver Membership</option>
-      <option value="Gold Membership">Gold Membership</option>
-    </select><br>
-
-    <p>Membership Level Benefits:</p>
-    <ul>
-      <li>NP Membership: No fee</li>
-      <li>Bronze Membership: Training materials</li>
-      <li>Silver Membership: Training materials, advertising</li>
-      <li>Gold Membership: Training materials, advertising, event discounts</li>
-    </ul>
-
-    <label for="business_description">Business Description:</label><br>
-    <textarea id="business_description" name="business_description" rows="4" cols="50"></textarea><br>
-
-    <input type="hidden" name="form_loaded_at" value="<?php echo date('Y-m-d H:i:s'); ?>">
-
-    <input type="submit" value="Submit">
-  </form>
-    </main>        
+        <div class="thank-you-container">
+          <div class="thank-you-overlay">
+            <h2>Thank You for Your Membership Application!</h2>
+            <p>We appreciate your interest in joining the Peachtree City Chamber of Commerce. Your application has been successfully submitted.</p>
+            <p>We will review your application and get back to you shortly with further instructions. If you have any questions in the meantime, please feel free to contact us.</p>
+            <p>Thank you once again for choosing to be a part of our community!</p>
+          </div>
+        </div>
+    </main>    
     <footer>
         <div class="footer-grid-container">
             <div class="logo-address">
