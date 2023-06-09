@@ -103,5 +103,10 @@
   .image-grid-container p {
     font-size: 20px;
   }
+
+  .join-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
 }
 
