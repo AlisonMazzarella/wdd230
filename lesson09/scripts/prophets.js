@@ -1,12 +1,13 @@
 var url = "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
 var prophetsData;
-var originalProphetsData;
 
 async function getProphetData() {
   try {
-    const response = await fetch(url);
+    var response = await fetch(url);
     prophetsData = await response.json();
-    originalProphetsData = prophetsData.prophets;
+    prophetsData.prophets.forEach(function(prophet) {
+      prophet.children = prophet.numofchildren || 0;
+    });
     displayProphets(prophetsData.prophets);
   } catch (error) {
     console.error("Error:", error);
@@ -15,20 +16,19 @@ async function getProphetData() {
 
 var displayProphets = function(prophets) {
   var cardsContainer = document.querySelector(".cards");
-  // Clear the existing cards
-  cardsContainer.innerHTML = '';
+  cardsContainer.innerHTML = "";
 
   prophets.forEach(function(prophet, index) {
     var card = document.createElement("section");
     card.classList.add("card");
 
     var name = document.createElement("h2");
-    name.innerHTML = prophet.name + " " + prophet.lastname + "<br>" + getProphetNameWithNumber(index + 1);
+    name.innerHTML = prophet.name + " " + prophet.lastname + "<br>" + getOrderFromURL(index);
     card.appendChild(name);
 
     var image = document.createElement("img");
     image.src = prophet.imageurl;
-    image.alt = "Portrait of " + prophet.name + " " + prophet.lastname + " - " + getProphetNameWithNumber(index + 1) + " Latter-day President";
+    image.alt = "Portrait of " + prophet.name + " " + prophet.lastname + " - " + getOrderFromURL(index) + " Latter-day President";
     card.appendChild(image);
 
     var birthDate = document.createElement("p");
@@ -44,29 +44,33 @@ var displayProphets = function(prophets) {
     age.textContent = ageText;
     card.appendChild(age);
 
+    var children = document.createElement("p");
+    children.textContent = "Children: " + (prophet.children || 0);
+    card.appendChild(children);
+
     cardsContainer.appendChild(card);
   });
 };
 
-function getProphetNameWithNumber(number) {
-  var suffix = getNumberSuffix(number);
-  return number + suffix;
-}
+function getOrderFromURL(index) {
+  var urlParams = new URLSearchParams(window.location.search);
+  var orderParam = urlParams.getAll("order[]");
+  var order = index + 1;
 
-function getNumberSuffix(number) {
-  var suffix = "th";
-  var lastDigit = number % 10;
-  var lastTwoDigits = number % 100;
-
-  if (lastDigit === 1 && lastTwoDigits !== 11) {
-    suffix = "st";
-  } else if (lastDigit === 2 && lastTwoDigits !== 12) {
-    suffix = "nd";
-  } else if (lastDigit === 3 && lastTwoDigits !== 13) {
-    suffix = "rd";
+  if (orderParam.length > index) {
+    order = parseInt(orderParam[index]);
   }
 
-  return suffix;
+  let formatter = new Intl.PluralRules("en", { type: "ordinal" });
+  let suffixes = {
+    one: "st",
+    two: "nd",
+    few: "rd",
+    other: "th",
+  };
+
+  let suffix = suffixes[formatter.select(order)];
+  return order + suffix;
 }
 
 function calculateAge(birthdate, deathdate) {
@@ -84,7 +88,7 @@ function calculateCurrentAge(birthdate) {
 }
 
 function filterProphetsBornInUtah() {
-  var utahProphets = originalProphetsData.filter(function(prophet) {
+  var utahProphets = prophetsData.prophets.filter(function(prophet) {
     return prophet.birthplace.toLowerCase().includes("utah");
   });
   displayProphets(utahProphets);
