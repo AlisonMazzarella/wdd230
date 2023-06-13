@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <title>Membership Application Form</title>
+    <title>Peachtree City Chamber of Commerce</title>
 </head>
 <body>
     <header>
@@ -38,43 +38,8 @@
         </div>
         <div class="nav-date" id="currentDate"></div>
     </header>
-    <main class="join-content">
-        <h1 class="form-title">Membership Application</h1>
-        <form class="membership-form" method="get" action="thankyou.html">
-          <label for="first_name">First Name:</label>
-          <input type="text" id="first_name" name="first_name" required><br>
-          <label for="last_name">Last Name:</label>
-          <input type="text" id="last_name" name="last_name" required><br>
-          <label for="position_title">Job Title:</label>
-          <input type="text" id="position_title" name="position_title" pattern="[a-zA-Z\s-]{7,}" title="Please enter at least 7 characters with only letters, hyphens, and spaces."><br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="example@example.com" required><br>
-          <label for="phone">Cell Phone Number:</label>
-          <input type="tel" id="phone" name="phone" required><br>
-          <label for="business_name">Business Name/Title:</label>
-          <input type="text" id="business_name" name="business_name" required><br>
-          <label for="membership_level">Membership Level:</label>
-          <select id="membership_level" name="membership_level">
-            <option value="NP Membership">NP Membership (Non-profit)</option>
-            <option value="Bronze Membership">Bronze Membership</option>
-            <option value="Silver Membership">Silver Membership</option>
-            <option value="Gold Membership">Gold Membership</option>
-          </select><br>
-          <div id="membership_benefits">
-            <p>Membership Level Benefits:</p>
-            <ul>
-              <li id="np_benefits">NP Membership $0: Training materials, advertising, and event discounts.</li>
-              <li id="bronze_benefits">Bronze Membership $25: Training materials only.</li>
-              <li id="silver_benefits">Silver Membership $50: Training materials, and advertising.</li>
-              <li id="gold_benefits">Gold Membership $100: Training materials, advertising, and event discounts.</li>
-            </ul>
-          </div>
-          <label for="business_description">Business Description:</label>
-          <textarea id="business_description" name="business_description" rows="4" cols="50"></textarea>
-          <input type="hidden" name="form_loaded_at" value="<?php echo date('Y-m-d H:i:s'); ?>">
-          <input type="submit" value="Apply for Membership">
-        </form>        
-    </main>        
+    <main>
+    </main>
     <footer>
         <div class="footer-grid-container">
             <div class="logo-address">
