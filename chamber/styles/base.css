@@ -412,57 +412,103 @@ footer {
     background-color: #FF7F50;
 }
 
-.card {
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+  
+.main-container .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+  
+.main-container .card {
     display: inline-block;
     width: 300px;
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #FDDA0D;
+}
+
+.main-container .card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
   
-.card-image {
+.main-container .card-image {
     width: 100%;
     height: auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
   
-.card-content {
+.main-container .card-content {
     padding: 10px;
 }
   
-.card-content h2 {
+.main-container .card-content h2 {
     margin-top: 0;
     font-size: 20px;
 }
   
-.card-content p {
+.main-container .card-content p {
     margin-bottom: 5px;
 }
   
-  /* Business list */
-ul {
+.main-container ul {
     list-style: none;
     padding: 0;
+    background-color: #FDDA0D;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-container ul li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
   
-ul li {
+.main-container ul li {
     margin-bottom: 20px;
 }
   
-ul li h2 {
+.main-container ul li h2 {
     margin: 0;
     font-size: 20px;
 }
   
-ul li p {
+.main-container ul li p {
     margin: 0;
 }
   
-  /* Toggle button */
-#toggle-button {
+.main-container #toggle-button {
     display: block;
     margin: 20px auto;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.main-container #toggle-button:hover {
+    background-color: #FF7F50;
+    color: black;
 }
   
+.main-container .directory-title {
+    text-align: center;
+}
