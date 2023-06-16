@@ -7,7 +7,7 @@
       "services": "Consulting, Strategy, Management, Analytics",
       "number": "555-5678",
       "membership": "Silver",
-      "imageurl": "images/consulting.jpg"
+      "imageurl": "images/consulting.webp"
     },
     {
       "name": "The UQS Store",
@@ -16,7 +16,7 @@
       "services": "Retail, Electronics, Appliances, Home Goods",
       "number": "555-3456",
       "membership": "Gold",
-      "imageurl": "images/mail.jpg"
+      "imageurl": "images/mail.webp"
     },
     {
       "name": "PineconeTech LLC",
@@ -25,7 +25,7 @@
       "services": "Software Development, IT Solutions, Web Design",
       "number": "555-7890",
       "membership": "Silver",
-      "imageurl": "images/tech.jpg"
+      "imageurl": "images/tech.webp"
     },
     {
       "name": "The Curious Rabbit",
@@ -34,7 +34,7 @@
       "services": "Books, Gifts, Home Decor, Stationery",
       "number": "555-6789",
       "membership": "Gold",
-      "imageurl": "images/dining.jpg"
+      "imageurl": "images/dining.webp"
     },
     {
       "name": "Arnold's Bistro",
@@ -43,7 +43,7 @@
       "services": "Restaurant, Fine Dining, Catering, Events",
       "number": "555-0123",
       "membership": "Bronze",
-      "imageurl": "images/eatery.jpg"
+      "imageurl": "images/eatery.webp"
     },
     {
       "name": "Due North Seafood",
@@ -52,7 +52,7 @@
       "services": "Seafood Restaurant, Fresh Fish, Seafood Market",
       "number": "555-4567",
       "membership": "NP",
-      "imageurl": "images/food.jpg"
+      "imageurl": "images/food.webp"
     },
     {
       "name": "Extendlife Fitness",
@@ -61,7 +61,7 @@
       "services": "Gym, Personal Training, Group Classes, Fitness Programs",
       "number": "555-8901",
       "membership": "Silver",
-      "imageurl": "images/fitness.jpg"
+      "imageurl": "images/fitness.webp"
     },
     {
       "name": "Peachtree Physicians",
@@ -70,7 +70,7 @@
       "services": "Medical Services, Primary Care, Family Medicine",
       "number": "555-6789",
       "membership": "Gold",
-      "imageurl": "images/doctors.jpg"
+      "imageurl": "images/doctors.webp"
     },
     {
       "name": "Peachtree Medical",
@@ -79,7 +79,7 @@
       "services": "Medical Clinic, Specialized Care, Diagnostic Services",
       "number": "555-0123",
       "membership": "Silver",
-      "imageurl": "images/medical.jpg"
+      "imageurl": "images/medical.webp"
     },
     {
       "name": "Chic Fashion",
@@ -88,7 +88,7 @@
       "services": "Fashion Retail, Clothing, Footwear, Styling",
       "number": "555-8901",
       "membership": "Bronze",
-      "imageurl": "images/store.jpg"
+      "imageurl": "images/store.webp"
     },
     {
       "name": "Holly's Fine Furniture",
@@ -97,7 +97,7 @@
       "services": "Furniture Store, Home Decor, Interior Design",
       "number": "555-2345",
       "membership": "Gold",
-      "imageurl": "images/furniture.jpg"
+      "imageurl": "images/furniture.webp"
     },
     {
       "name": "Master Escape Room",
@@ -106,7 +106,7 @@
       "services": "Escape Room, Team-Building, Puzzle Games",
       "number": "555-0123",
       "membership": "Bronze",
-      "imageurl": "images/game.jpg"
+      "imageurl": "images/game.webp"
     }
   ]
 }
