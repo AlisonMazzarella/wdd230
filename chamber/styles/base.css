@@ -411,3 +411,58 @@ footer {
 .membership-form input[type="submit"]:hover {
     background-color: #FF7F50;
 }
+
+.card {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.card-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+  
+.card-content {
+    padding: 10px;
+}
+  
+.card-content h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+  
+.card-content p {
+    margin-bottom: 5px;
+}
+  
+  /* Business list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+  
+ul li {
+    margin-bottom: 20px;
+}
+  
+ul li h2 {
+    margin: 0;
+    font-size: 20px;
+}
+  
+ul li p {
+    margin: 0;
+}
+  
+  /* Toggle button */
+#toggle-button {
+    display: block;
+    margin: 20px auto;
+}
+  
