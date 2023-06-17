@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+  
+h1 {
+    text-align: center;
+    text-shadow: 0 0 20px #0088ff;
+    color: #ff00cc;
+    animation: fade-in 2s ease-in-out infinite alternate;
+    font-family: 'Pacifico', cursive;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+p {
+    text-align: center;
+}
+  
+#current-temp {
+    font-size: 24px;
+}
+  
+h2 {
+    text-align: center;
+}
+  
+figure {
+    text-align: center;
+}
+  
+#weather-icon {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+  
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: purple;
+} 
