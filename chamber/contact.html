@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <title>Thank You Form</title>
+    <title>Peachtree City Chamber of Commerce</title>
 </head>
 <body>
     <header>
@@ -37,18 +37,38 @@
           </div>
         </div>
         <div class="nav-date" id="currentDate"></div>
+        <div class="visit-info" id="visitInfo"></div>
     </header>
     <main>
-      <div class="thank-you-container">
-          <img src="images/Peachtree-City.webp" alt="Peachtree City" class="background-image">
-          <div class="thank-you-overlay">
-              <h2>Thank You for Your Membership Application!</h2>
-              <p>We appreciate your interest in joining the Peachtree City Chamber of Commerce. Your application has been successfully submitted.</p>
-              <p>We will review your application and get back to you shortly with further instructions. If you have any questions in the meantime, please feel free to contact us.</p>
-              <p>Thank you once again for choosing to be a part of our community!</p>
-          </div>
-      </div>
-    </main>     
+        <section class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="images/map.webp" alt="Location Icon" style="height: 40px; width: auto;">
+                        <p>123 Main St<br>Peachtree City, GA 30269</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/telephone-call.webp" alt="Phone Icon" style="height: 40px; width: auto;">
+                        <p>+1 (770) 080-4000</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/gmail.webp" alt="Email Icon" style="height: 40px; width: auto;">
+                        <p>info@peachtreecitychamber.com</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main> 
     <footer>
         <div class="footer-grid-container">
             <div class="logo-address">

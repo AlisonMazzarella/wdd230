@@ -507,3 +507,60 @@ footer {
 .main-container .directory-title {
     text-align: center;
 }
+
+.contact-section {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    text-align: center;
+    font-weight: bold;
+}
+  
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+  
+.contact-item {
+    flex: 1 0 300px;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #FDDA0D;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.contact-item img {
+    width: 48px;
+    height: 48px;
+}
+  
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+  
+.contact-form h3 {
+    margin-bottom: 20px;
+}
+  
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #FDDA0D;
+}
+  
+.contact-form button {
+    background-color: #FF7F50;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
