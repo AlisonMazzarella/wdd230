@@ -565,3 +565,31 @@ footer {
     cursor: pointer;
     font-weight: bold;
 }
+
+#calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+#calendar-table th,
+#calendar-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+  
+.event {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #FDDA0D;
+    cursor: pointer;
+}
+  
+.event:hover {
+    background-color: #FF7F50;
+}
+  
+#calendar-month {
+    text-align: center;
+    text-decoration: underline;
+}
