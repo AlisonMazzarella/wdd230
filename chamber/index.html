@@ -50,15 +50,18 @@
           </div>                    
           <div class="weather">
             <h1>Weather</h1>
-            <img src="" alt="Weather Icon" id="weatherIcon">
             <h2 id="weatherCondition"></h2>
             <hr>
+            <figure>
+              <img src="" alt="weather icon" id="weather-icon" />
+              <figcaption></figcaption>
+            </figure>
             <p>
+              Temperature: <span id="current-temp"></span><br>
               Wind Speed: <span id="windSpeed"></span><br>
-              Temperature: <span id="temperature"></span>°F<br>
               Wind Chill: <span id="windChill"></span>
             </p>
-          </div>
+          </div>         
           <div class="join">
             <button type="button" onclick="location.href='join.html'">Join Us!</button>
             <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
@@ -124,6 +127,6 @@
     <script src="scripts/date.js"></script>
     <script src="scripts/modification.js"></script>
     <script src="scripts/hamburger.js"></script> 
-    <script src="weather.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
