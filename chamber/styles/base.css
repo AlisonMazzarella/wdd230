@@ -566,30 +566,25 @@ footer {
     font-weight: bold;
 }
 
-#calendar-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-  
 #calendar-table th,
 #calendar-table td {
-    padding: 10px;
+    padding: 3px;
+    font-size: 10px;
+    border: none;
     text-align: center;
-    border: 1px solid #ccc;
 }
-  
+
 .event {
-    margin-top: 5px;
-    padding: 5px;
+    margin-top: 2px;
+    padding: 2px;
     background-color: #FDDA0D;
     cursor: pointer;
 }
-  
+
+#calendar-month {
+    font-size: 16px;
+}
+
 .event:hover {
     background-color: #FF7F50;
-}
-  
-#calendar-month {
-    text-align: center;
-    text-decoration: underline;
 }

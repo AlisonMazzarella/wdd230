@@ -91,4 +91,19 @@
   .image-grid-container p {
     font-size: 18px;
   }
+
+  #calendar-table th,
+  #calendar-table td {
+      padding: 8px;
+      font-size: 14px;
+  }
+
+  .event {
+      margin-top: 4px;
+      padding: 4px;
+  }
+
+  #calendar-month {
+      font-size: 20px;
+  }
 }
