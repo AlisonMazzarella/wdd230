@@ -42,6 +42,10 @@ header {
     width: auto;
 }
 
+.nav-icons a {
+    text-decoration: none;
+}
+
 .nav-date, .visit-info {
     border: solid 8px #FF7F50;
     background-color: #FF7F50;
