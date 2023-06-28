@@ -179,6 +179,11 @@ header {
     grid-area: news;
 }
 
+.events img {
+    width: auto;
+    height: 60px;
+}
+
 .hero {
     grid-area: hero;
     position: relative;
@@ -239,8 +244,14 @@ header {
 .spotlight1 img,
 .spotlight2 img, 
 .spotlight3 img {
-    height: 80px;
+    height: 100px;
     width: auto;
+}
+
+.spotlight1 h2,
+.spotlight2 h2, 
+.spotlight3 h2 {
+    padding: 5px;
 }
 
 footer {
@@ -357,7 +368,7 @@ footer {
 }
 
 .form-title {
-    color: red;
+    color: black;
     font-size: 24px;
 }
 
