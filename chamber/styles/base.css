@@ -514,22 +514,13 @@ footer {
 }
   
 .main-container #toggle-button {
-    display: block;
-    margin: 20px auto;
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #333;
+    margin: 10px auto;
     padding: 10px 20px;
     cursor: pointer;
 }
 
 .main-container #toggle-button:hover {
     background-color: #f4a259;
-    color: black;
-}
-  
-.main-container .directory-title {
-    text-align: center;
 }
 
 .contact-section {
