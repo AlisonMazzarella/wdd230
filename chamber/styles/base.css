@@ -609,6 +609,10 @@ footer {
     font-size: 16px;
 }
 
+#calendar-table {
+    padding-bottom: 10px;
+}
+
 .event:hover {
     background-color: #f4a259;
 }
