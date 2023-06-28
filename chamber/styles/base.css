@@ -47,8 +47,8 @@ header {
 }
 
 .nav-date, .visit-info {
-    border: solid 8px #FF7F50;
-    background-color: #FF7F50;
+    border: solid 8px #f4a259;
+    background-color: #f4a259;
     text-align: center; 
     font-size: 20px; 
     color: black;
@@ -170,7 +170,7 @@ header {
 }
   
 .join button:hover {
-    background-color: #FF7F50; 
+    background-color: #f4a259; 
     cursor: pointer; 
 }
   
@@ -220,7 +220,7 @@ header {
 }
   
 .hero button:hover {
-    background-color: #FF7F50; 
+    background-color: #f4a259; 
     cursor: pointer; 
 }
 
@@ -416,7 +416,7 @@ footer {
 }
   
 .membership-form input[type="submit"]:hover {
-    background-color: #FF7F50;
+    background-color: #f4a259;
 }
 
 .main-container {
@@ -512,7 +512,7 @@ footer {
 }
 
 .main-container #toggle-button:hover {
-    background-color: #FF7F50;
+    background-color: #f4a259;
     color: black;
 }
   
@@ -569,7 +569,7 @@ footer {
 }
   
 .contact-form button {
-    background-color: #FF7F50;
+    background-color: #f4a259;
     color: black;
     padding: 10px 20px;
     border: none;
@@ -598,7 +598,7 @@ footer {
 }
 
 .event:hover {
-    background-color: #FF7F50;
+    background-color: #f4a259;
 }
 
 #weather-icon {
