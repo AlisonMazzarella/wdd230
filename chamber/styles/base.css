@@ -1,3 +1,15 @@
+@keyframes fadeEffect {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
 header {
     background-color: #006241;
     color: white;
@@ -124,7 +136,7 @@ header {
 .spotlight2 h1, 
 .spotlight3 h1 {
     font-size: 22px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeEffect 2s ease-in-out;
 }
 
 .events h2,
