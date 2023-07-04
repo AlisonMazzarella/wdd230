@@ -1,20 +1,19 @@
-body, header {
+body, header h1 {
     font-family: 'Fugaz One', cursive;
     font-family: 'Roboto', sans-serif;
 }
 
 .topnav {
     background-color: #95a78d;
-    overflow: hidden;
-  }
+    height: 80px;
+    padding-top: 40px;
+}
   
 .topnav a {
-    float: left;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
 }
   
 .topnav a:hover {
@@ -24,14 +23,6 @@ body, header {
   
 .topnav a.active {
     background-color: #bd897e;
-}
-
-.logo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 5px;
-  margin-right: 10px;
 }
 
 h1, h2, h4, p {
