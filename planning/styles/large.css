@@ -55,6 +55,7 @@ main {
 }
 
 footer {
+    position: relative;
     background-color: #95a78d;
     color: white;
     padding: 20px;
