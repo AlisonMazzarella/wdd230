@@ -24,11 +24,54 @@
     </nav>
   </header>
 
+  <section class="form-section">
+    <h2>Build Your Own Specialty Drink</h2>
+    <form id="specialty-drink-form">
+      <div>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+      </div>
+      <div>
+        <label for="fruit1">Fruit 1:</label>
+        <select id="fruit1" required>
+        </select>
+      </div>
+      <div>
+        <label for="fruit2">Fruit 2:</label>
+        <select id="fruit2" required>
+        </select>
+      </div>
+      <div>
+        <label for="fruit3">Fruit 3:</label>
+        <select id="fruit3" required>
+        </select>
+      </div>
+      <div>
+        <label for="special-instructions">Special Instructions:</label>
+        <textarea id="special-instructions" rows="4"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section class="output-section">
+    <h2>Order Summary</h2>
+    <div id="order-output"></div>
+  </section>
+
   <footer>
     <p id="footer-content"></p>
   </footer>
 
   <script src="scripts/modified.js"></script>
-
+  <script src="scripts/drinkinfo.js"></script>
 </body>
 </html>
