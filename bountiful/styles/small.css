@@ -58,7 +58,7 @@ nav ul li a:hover {
 footer {
   background-color: #95a78d;
   padding: 20px;
-  color: #fff;
+  color: black;
   text-align: center;
 }
   
@@ -190,7 +190,7 @@ footer {
 .grid-item {
   background-color: #bd897e;
   padding: 20px;
-  color: #fff;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
