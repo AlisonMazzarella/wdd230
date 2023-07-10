@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #000;
+    line-height: 1.5;
+}
+  
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+header {
+    background-color: #c8c6af;
+    padding: 20px;
+}
+  
+nav ul {
+    list-style: none;
+}
+  
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+  
+footer {
+    background-color: #95a78d;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+  
+.contact-info {
+    margin-top: 10px;
+}
+  
+.coastal-info,
+.call-to-action,
+.social-media,
+.weather-card,
+.specialty-drinks {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+}
+  
+.weather-info p {
+    margin-bottom: 10px;
+}
+  
+.forecast {
+    margin-top: 10px;
+}
+  
+.forecast-item {
+    margin-bottom: 5px;
+}
+  
+.specialty-drinks p {
+    margin-bottom: 10px;
+}
+  
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+  
+.grid-item {
+    background-color: #bd897e;
+    padding: 20px;
+    color: #fff;
+}  

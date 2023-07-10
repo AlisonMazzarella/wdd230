@@ -1,11 +1,128 @@
-The Home page is a contemporary, exciting landing page providing images of fruit and produce including specialty fruit drinks that are ready to serve and made fresh. The page must contain the following.
-Readily available navigation and business contact information.
-Summary information about any coastal area or areas in the southern California coast of your choosing.
-A call to action to make your own fruit drink mix. This link can link to the 📄Fresh page.
-Social media links (at least three) (no account necessary).
-The weather card(s) must summarize the current weather conditions for Carlsbad. Use the OpenWeatherMap APIs (weather, forecast/daily) and include:
-the current temperature,
-the condition description,
-the humidity, and
-a three(3) day temperature forecast.
-Include an information card about the total number of specialty drinks that the current user has submitted from the Fresh page form. This information should just be stored locally, with the user's agent (in their browser).
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bountiful Foods Organic, Local, Fresh, Juices, Healthy, Carlsbad.">
+  <title>Bountiful Foods</title>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+        <img src="images/bountifullogo.webp" alt="Bountiful Foods Logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fresh.html">Fresh</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info">
+      <p>Phone: 442-456-7890</p>
+      <p>Email: info@bountifulfoods.com</p>
+    </div>
+    <div class="map-link">
+        <h3>Map</h3>
+        <p><a href="https://www.mapquest.com/us/ca/carlsbad" target="_blank">Bountiful Foods</a></p>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="coastal-info">
+        <h2>Our Coastal Food Trucks</h2>
+        <p>Hungry for organic, local, delicious cuisine you can feel good about? Check out our food trucks conveniently located up and down the California coast between Los Angeles and San Diego.</p>
+        <div class="food-trucks">
+            <h3>Food Trucks</h3>
+            <p>Find one of our food trucks in your area:</p>
+            <ul>
+                <li><strong>Santa Monica:</strong> Bountiful Foods - Located at 123 Main St.</li>
+                <li><strong>Venice Beach:</strong> Bountiful Foods - Located at 456 Ocean Ave.</li>
+                <li><strong>Huntington Beach:</strong> Bountiful Foods - Located at 789 Pacific Blvd.</li>
+                <li><strong>Laguna Beach:</strong> Bountiful Foods - Located at 321 Beachside Dr.</li>
+            </ul>
+            <p>Don't forget to tag us on social media when you visit!</p>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <h2>Make Your Own Drink</h2>
+        <p>Create your own delicious fruit drink mix. <a href="fresh.html">Click here</a> to get started!</p>
+    </section>
+
+    <section class="social-media">
+        <h2>Connect with Us</h2>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+    </section>
+
+    <section class="weather-card">
+        <h2>Current Weather in Carlsbad</h2>
+        <div class="weather-info">
+          <p>Temperature: <span id="current-temp"></span></p>
+          <p>Condition: <span id="condition"></span></p>
+          <p>Humidity: <span id="humidity"></span></p>
+        </div>
+        <div class="forecast">
+          <h3>3-Day Forecast</h3>
+          <div class="forecast-item">
+            <p><span class="day"></span>: <span class="temp"></span></p>
+            <img class="weather-icon" src="" alt="">
+          </div>
+          <div class="forecast-item">
+            <p><span class="day"></span>: <span class="temp"></span></p>
+            <img class="weather-icon" src="" alt="">
+          </div>
+          <div class="forecast-item">
+            <p><span class="day"></span>: <span class="temp"></span></p>
+            <img class="weather-icon" src="" alt="">
+          </div>
+        </div>
+    </section>
+
+    <section class="specialty-drinks">
+        <h2>Your Drink Orders</h2>
+        <p>Total number of drinks ordered: <span id="drink-count"></span></p>
+    </section>
+
+    <div class="grid-container">
+        <div class="grid-item">
+          <h3>August Harvest</h3>
+          <p>We believe seasonal produce tastes better. See what August has brought us!</p>
+          <ul>
+            <li><strong>Avocados</strong></li>
+            <li><strong>Cantaloupe</strong></li>
+            <li><strong>Mango</strong></li>
+            <li><strong>Papaya</strong></li>
+        </ul>
+        </div>
+        <div class="grid-item">
+          <h3>Summer Delight</h3>
+          <p>Get 20% off our refreshing summer smoothie line. Limited-time offer!</p>
+        </div>
+        <div class="grid-item">
+          <h3>Eco Warrior</h3>
+          <p>Bring your own reusable smoothie cup and get $1.00 off your purchase!</p>
+        </div>
+      </div>      
+  </div>
+
+  <footer>
+    <p id="footer-content"></p>
+  </footer>
+
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/drinkcount.js"></script>
+  <script src="scripts/modified.js"></script>
+
+</body>
+</html>
