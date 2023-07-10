@@ -1,17 +1,22 @@
-let drinkCount = localStorage.getItem('drinkCount') || 0;
+let drinkCount = parseInt(localStorage.getItem('drinkCount')) || 0;
 
-document.getElementById('drink-count').textContent = drinkCount;
+function updateDrinkCountDisplay() {
+  document.getElementById('drink-count').textContent = drinkCount;
+}
 
 function incrementDrinkCount() {
   drinkCount++;
   localStorage.setItem('drinkCount', drinkCount);
-  document.getElementById('drink-count').textContent = drinkCount;
+  updateDrinkCountDisplay();
 }
 
-const freshForm = document.getElementById('fresh-form');
+window.addEventListener('DOMContentLoaded', updateDrinkCountDisplay);
+
+const freshForm = document.getElementById('specialty-drink-form');
 if (freshForm) {
   freshForm.addEventListener('submit', function (event) {
     event.preventDefault();
     incrementDrinkCount();
+    freshForm.reset(); 
   });
 }
