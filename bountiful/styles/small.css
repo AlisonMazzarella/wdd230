@@ -1,369 +1,369 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #000;
-    line-height: 1.5;
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #000;
+  line-height: 1.5;
+}
 
-  section {
-    border: 1px solid #bd897e;
-  }
+section {
+  border: 1px solid #bd897e;
+}
   
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
   
-  header {
-    background-color: #c8c6af;
-    padding: 20px;
-  }
+header {
+  background-color: #c8c6af;
+  padding: 20px;
+}
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
   
-  nav ul {
-    list-style: none;
-    display: inline-flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
+nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
   
-  nav ul li a {
-    text-decoration: none;
-    color: #000;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-size: 20px;
-  }
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
   
-  nav ul li a:hover {
-    background-color: #bd897e;
-    color: #fff;
-  }
+nav ul li a:hover {
+  background-color: #bd897e;
+  color: #fff;
+}
   
-  footer {
-    background-color: #95a78d;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-  }
+footer {
+  background-color: #95a78d;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
   
-  .contact-info {
-    margin-top: 10px;
-  }
+.contact-info {
+  margin-top: 10px;
+}
   
-  .coastal-info,
-  .call-to-action,
-  .social-media,
-  .weather-card,
-  .specialty-drinks,
-  .contact-info {
-    background-color: #fff;
-    margin-top: 20px;
-    padding: 20px;
-  }
+.coastal-info,
+.call-to-action,
+.social-media,
+.weather-card,
+.specialty-drinks,
+.contact-info {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+}
 
-  .coastal-info {
-    background-color: #fff;
-    margin-top: 20px;
-    padding: 20px;
-    text-align: center;
-  }
+.coastal-info {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
   
-  .food-trucks {
-    margin-top: 20px;
-  }
+.food-trucks {
+  margin-top: 20px;
+}
   
-  .food-trucks h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
+.food-trucks h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
   
-  .food-trucks p {
-    margin-bottom: 20px;
-  }
+.food-trucks p {
+  margin-bottom: 20px;
+}
   
-  .food-trucks ul {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.food-trucks ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
   
-  .food-trucks li {
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
+.food-trucks li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
   
-  .food-trucks strong {
-    display: block;
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-  }
+.food-trucks strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
   
-  .food-trucks img {
-    width: 60px;
-    height: 60px;
-    margin-right: 5px;
-    vertical-align: middle;
-  }
+.food-trucks img {
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
   
- .call-to-action img {
-    width: 60px;
-    height: 60px;
-    margin-left: 5px;
-  }
+.call-to-action img {
+  width: 60px;
+  height: 60px;
+  margin-left: 5px;
+}
 
-  .social-media {
-    text-align: center;
-  }
+.social-media {
+  text-align: center;
+}
   
-  .social-media img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-    display: inline-block;
-  }
+.social-media img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
   
-  .weather-card {
-    text-align: center;
-  }
+.weather-card {
+  text-align: center;
+}
   
-  .weather-info {
-    margin-bottom: 10px;
-  }
+.weather-info {
+  margin-bottom: 10px;
+}
 
-  .weather-info p {
-    margin-bottom: 10px;
-  }
+.weather-info p {
+  margin-bottom: 10px;
+}
   
-  .forecast {
-    margin-top: 10px;
-  }
+.forecast {
+  margin-top: 10px;
+}
   
-  .forecast-item {
-    margin-bottom: 5px;
-  }
+.forecast-item {
+  margin-bottom: 5px;
+}
 
-  .specialty-drinks p {
-    margin-bottom: 10px;
-  }
+.specialty-drinks p {
+  margin-bottom: 10px;
+}
 
-  .specialty-drinks img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-  }
+.specialty-drinks img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
 
-  .contat-info {
-    max-width: 400px; 
-    height: auto;
-    margin: 0 auto;
-  }
+.contat-info {
+  max-width: 400px; 
+  height: auto;
+  margin: 0 auto;
+}
 
-  .contact-info iframe {
-    width: 100%;
-    height: 100%;
-  }
+.contact-info iframe {
+  width: 100%;
+  height: 100%;
+}
   
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
   
-  .grid-item {
-    background-color: #bd897e;
-    padding: 20px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
+.grid-item {
+  background-color: #bd897e;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
   
-  .grid-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
+.grid-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
   
-  .grid-item p {
-    margin-bottom: 20px;
-  }
+.grid-item p {
+  margin-bottom: 20px;
+}
   
-  .grid-item a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
+.grid-item a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
   
-  .grid-item a:hover {
-    color: #f87666;
-  }
+.grid-item a:hover {
+  color: #f87666;
+}
   
-  .grid-item ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
+.grid-item ul {
+  list-style-type: none;
+  padding-left: 0;
+}
   
-  .grid-item li {
-    margin-bottom: 5px;
-  }
+.grid-item li {
+  margin-bottom: 5px;
+}
 
-  .grid-item img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-  }
+.grid-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
 
-  .form-section {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 20px;
-  }
+.form-section {
+  flex-direction: column;
+  align-items: stretch;
+  padding: 20px;
+}
 
-  .form-section label,
-  .form-section input,
-  .form-section select,
-  .form-section textarea {
-    width: 100%;
-  }
+.form-section label,
+.form-section input,
+.form-section select,
+.form-section textarea {
+  width: 100%;
+}
   
-  .form-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
+.form-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
   
-  #specialty-drink-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    margin-top: 20px;
-  }
+#specialty-drink-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 20px;
+}
   
-  #specialty-drink-form div {
-    display: flex;
-    flex-direction: column;
-  }
+#specialty-drink-form div {
+  display: flex;
+  flex-direction: column;
+}
   
-  #specialty-drink-form label {
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
+#specialty-drink-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
   
-  #specialty-drink-form input,
-  #specialty-drink-form select,
-  #specialty-drink-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+#specialty-drink-form input,
+#specialty-drink-form select,
+#specialty-drink-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
   
-  #specialty-drink-form textarea {
-    resize: vertical;
-    min-height: 100px;
-  }
+#specialty-drink-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
   
-  #specialty-drink-form button[type="submit"] {
-    padding: 12px 24px;
-    background-color: #bd897e;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-  }
+#specialty-drink-form button[type="submit"] {
+  padding: 12px 24px;
+  background-color: #bd897e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
   
-  #specialty-drink-form button[type="submit"]:hover {
-    background-color: #f87666;
-  }
+#specialty-drink-form button[type="submit"]:hover {
+  background-color: #f87666;
+}
   
-  .output-section {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 4px;
-  }
+.output-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
   
-  .output-section h2 {
-    font-size: 24px;
-    margin-bottom: 16px;
-  }
+.output-section h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
   
-  .output-section p {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
+.output-section p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
   
-  .output-section strong {
-    font-weight: bold;
-  }
+.output-section strong {
+  font-weight: bold;
+}
   
-  .output-section hr {
-    border: none;
-    border-top: 1px solid #ccc;
-    margin: 16px 0;
-  }
+.output-section hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 16px 0;
+}
 
-  .about-container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+.about-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
   
-  .about-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
+.about-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
   
-  .about-content {
-    line-height: 1.5;
-    margin-bottom: 40px;
-  }
+.about-content {
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
   
-  .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
   
-  .gallery-item {
-    flex-basis: calc(33.33% - 10px);
-    margin-bottom: 20px;
-  }
+.gallery-item {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
   
-  .gallery-item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
   
-  .gallery-item p {
-    margin-top: 10px;
-  }
+.gallery-item p {
+  margin-top: 10px;
+}
 
-  .gallery-item, .description-box {
-    border: 1px solid #bd897e;
-    background-color: rgba(248, 118, 102, 0.9);
-    padding: 2px;
-  }
+.gallery-item, .description-box {
+  border: 1px solid #bd897e;
+  background-color: rgba(248, 118, 102, 0.9);
+  padding: 2px;
+}
