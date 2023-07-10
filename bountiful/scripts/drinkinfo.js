@@ -1,4 +1,5 @@
 const jsonUrl = "scripts/fruit.json";
+let fruitData; 
 
 async function fetchFruitData() {
   try {
@@ -23,14 +24,14 @@ function populateFruitOptions(fruitData) {
   });
 }
 
-function calculateTotalNutrition(fruits, fruitData) {
+function calculateTotalNutrition(fruitChoices) {
   let totalCarbohydrates = 0;
   let totalProtein = 0;
   let totalFat = 0;
   let totalSugar = 0;
   let totalCalories = 0;
 
-  fruits.forEach(function (fruit) {
+  fruitChoices.forEach(function (fruit) {
     const selectedFruit = fruitData.find(function (item) {
       return item.name === fruit;
     });
@@ -60,9 +61,7 @@ function formatOrderSummary(inputs, totalNutrition) {
     <p><strong>Fruit Choices:</strong> ${inputs.fruitChoices.join(", ")}</p>
     <p><strong>Special Instructions:</strong> ${inputs.specialInstructions}</p>
     <h3>Total Nutritional Values</h3>
-    <p><strong>Carbohydrates:</strong> ${totalNutrition.carbohydrates.toFixed(
-      2
-    )}g</p>
+    <p><strong>Carbohydrates:</strong> ${totalNutrition.carbohydrates.toFixed(2)}g</p>
     <p><strong>Protein:</strong> ${totalNutrition.protein.toFixed(2)}g</p>
     <p><strong>Fat:</strong> ${totalNutrition.fat.toFixed(2)}g</p>
     <p><strong>Sugar:</strong> ${totalNutrition.sugar.toFixed(2)}g</p>
@@ -72,7 +71,7 @@ function formatOrderSummary(inputs, totalNutrition) {
   return formattedOutput;
 }
 
-function handleFormSubmit(event) {
+function handleFormSubmit(event, fruitData) {
   event.preventDefault();
 
   const form = document.getElementById("specialty-drink-form");
@@ -88,19 +87,16 @@ function handleFormSubmit(event) {
     specialInstructions: form.elements["special-instructions"].value,
   };
 
-  const totalNutrition = calculateTotalNutrition(
-    inputs.fruitChoices,
-    fruitData
-  );
+  const totalNutrition = calculateTotalNutrition(inputs.fruitChoices);
 
   const orderOutput = document.getElementById("order-output");
   orderOutput.innerHTML = formatOrderSummary(inputs, totalNutrition);
 }
 
-window.addEventListener("load", async () => {
-  const fruitData = await fetchFruitData();
-  populateFruitOptions(fruitData);
-
-  const form = document.getElementById("specialty-drink-form");
-  form.addEventListener("submit", handleFormSubmit);
+window.addEventListener("DOMContentLoaded", async () => {
+    fruitData = await fetchFruitData(); 
+    populateFruitOptions(fruitData);
+  
+    const form = document.getElementById("specialty-drink-form");
+    form.addEventListener("submit", (event) => handleFormSubmit(event, fruitData));
 });
