@@ -42,23 +42,24 @@ function displayCurrentWeather(weatherData) {
 
 function displayForecast(forecastData) {
   const forecastList = forecastData.list.slice(0, 3);
-  forecastList.forEach((forecast, index) => {
-    const forecastItem = forecastItems[index];
+  forecastItems.forEach((forecastItem, index) => {
     const forecastDay = forecastItem.querySelector('.day');
     const forecastTemp = forecastItem.querySelector('.temp');
+    const forecast = forecastList[index];
     const forecastDateTime = new Date(forecast.dt * 1000);
     const forecastIcon = forecast.weather[0].icon;
 
-    forecastDay.textContent = getDayOfWeek(forecastDateTime);
+    forecastDay.textContent = getDayOfWeek(forecastDateTime, index);
     forecastTemp.textContent = `${forecast.main.temp.toFixed(0)}°F`;
     forecastItem.querySelector('.weather-icon').setAttribute('src', `https://openweathermap.org/img/w/${forecastIcon}.png`);
     forecastItem.querySelector('.weather-icon').setAttribute('alt', forecast.weather[0].description);
   });
 }
 
-function getDayOfWeek(date) {
+function getDayOfWeek(date, index) {
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  return days[date.getDay()];
+  const dayIndex = (date.getDay() + index) % 7;
+  return days[dayIndex];
 }
 
 fetchWeatherData();

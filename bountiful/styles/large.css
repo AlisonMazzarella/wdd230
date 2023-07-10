@@ -1,0 +1,40 @@
+@media (min-width: 1024px) {
+   header {
+        background-color: #c8c6af;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+      }
+      
+      nav {
+        display: flex;
+        align-items: center;
+      }
+      
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px; 
+        align-items: center;
+        justify-content: flex-end; 
+        height: 100%;
+      }
+      
+      nav ul li a {
+        text-decoration: none;
+        color: #000;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        font-size: 32px;
+      }
+      
+      nav ul li a:hover {
+        background-color: #bd897e;
+        color: #fff;
+      }
+      
+      header img {
+        margin-right: 250px; 
+      }
+}

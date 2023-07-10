@@ -2,85 +2,233 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
   
-body {
+  body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     color: #000;
     line-height: 1.5;
-}
+  }
+
+  section {
+    border: 1px solid #bd897e;
+  }
   
-.container {
+  .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-}
+  }
   
-header {
+  header {
     background-color: #c8c6af;
     padding: 20px;
-}
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
-nav ul {
+  nav ul {
     list-style: none;
-}
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
   
-nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-  
-nav ul li a {
+  nav ul li a {
     text-decoration: none;
     color: #000;
-}
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+  }
   
-footer {
+  nav ul li a:hover {
+    background-color: #bd897e;
+    color: #fff;
+  }
+  
+  footer {
     background-color: #95a78d;
     padding: 20px;
     color: #fff;
     text-align: center;
-}
+  }
   
-.contact-info {
+  .contact-info {
     margin-top: 10px;
-}
+  }
   
-.coastal-info,
-.call-to-action,
-.social-media,
-.weather-card,
-.specialty-drinks {
+  .coastal-info,
+  .call-to-action,
+  .social-media,
+  .weather-card,
+  .specialty-drinks,
+  .contact-info {
     background-color: #fff;
     margin-top: 20px;
     padding: 20px;
-}
+  }
+
+  .coastal-info {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+  }
   
-.weather-info p {
+  .food-trucks {
+    margin-top: 20px;
+  }
+  
+  .food-trucks h3 {
+    font-size: 1.5rem;
     margin-bottom: 10px;
-}
+  }
   
-.forecast {
-    margin-top: 10px;
-}
+  .food-trucks p {
+    margin-bottom: 20px;
+  }
   
-.forecast-item {
+  .food-trucks ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .food-trucks li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .food-trucks strong {
+    display: block;
+    font-size: 1.2rem;
     margin-bottom: 5px;
-}
+  }
   
-.specialty-drinks p {
+  .food-trucks img {
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+ .call-to-action img {
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+  }
+
+  .social-media {
+    text-align: center;
+  }
+  
+  .social-media img {
+    width: 50px;
+    height: 50px;
     margin-bottom: 10px;
-}
+    display: inline-block;
+  }
   
-.grid-container {
+  .weather-card {
+    text-align: center;
+  }
+  
+  .weather-info {
+    margin-bottom: 10px;
+  }
+
+  .weather-info p {
+    margin-bottom: 10px;
+  }
+  
+  .forecast {
+    margin-top: 10px;
+  }
+  
+  .forecast-item {
+    margin-bottom: 5px;
+  }
+
+  .specialty-drinks p {
+    margin-bottom: 10px;
+  }
+
+  .specialty-drinks img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .contat-info {
+    max-width: 400px; 
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .contact-info iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
-}
+  }
   
-.grid-item {
+  .grid-item {
     background-color: #bd897e;
     padding: 20px;
     color: #fff;
-}  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .grid-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .grid-item p {
+    margin-bottom: 20px;
+  }
+  
+  .grid-item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .grid-item a:hover {
+    color: #f87666;
+  }
+  
+  .grid-item ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .grid-item li {
+    margin-bottom: 5px;
+  }
+
+  .grid-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
